@@ -1,9 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+
     tools:context=".ConvertActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewId"
+        android:text="Million to Billion Converter App"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+
+        android:layout_gravity="center"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:text="Billion"
+        android:drawableStart="@drawable/number"
+        android:drawableLeft="@drawable/number"
+        android:drawablePadding="10dp"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:text="Million"
+        android:drawableStart="@drawable/million"
+        android:drawableLeft="@drawable/million"
+        android:drawablePadding="10dp"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+
+        />
+
+
+
+
+
+
+</LinearLayout>
