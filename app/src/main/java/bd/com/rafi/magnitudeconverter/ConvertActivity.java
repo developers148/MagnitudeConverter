@@ -35,13 +35,13 @@ Button button;
         if(data.equals("Numeric")){
             t2.setText("word");
             t1.setText("Numeric");
-            e2.setEnabled(false);
+            //e2.setEnabled(false);
         }
         else{
             t1.setText("word");
             t2.setText("Numeric");
 
-            e2.setEnabled(false);
+           // e2.setEnabled(false);
 
         }
         button.setOnClickListener(new View.OnClickListener() {
@@ -72,7 +72,8 @@ Button button;
 
     public void convertWordtoNumber(){
         String word=e1.getText().toString();
-        long digit=WordNNumber.wordToNumber(word);
+        long digit=WordNNumber.wordToNumber(word,ConvertActivity.this);
+       // Toast.makeText(ConvertActivity.this,digit,Toast.LENGTH_SHORT).show();
         e2.setText(Long.toString(digit));
     }
 }
