@@ -30,26 +30,28 @@ Button button;
         t2=(TextView)findViewById(R.id.t2);
         button=(Button)findViewById(R.id.Convert);
         final String data=getIntent().getStringExtra("data");
-        getActionBar().setTitle(data);
-        if(data.equals("wordtonumeric")){
-            t1.setText("word");
-            t2.setText("Numeric");
+        //getActionBar().setTitle(data);
+        if(data.equals("Numeric")){
+            t2.setText("word");
+            t1.setText("Numeric");
             e2.setEnabled(false);
         }
         else{
-            t2.setText("word");
-            t1.setText("Numeric");
+            t1.setText("word");
+            t2.setText("Numeric");
+
             e2.setEnabled(false);
 
         }
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(data.equals("wordtonumeric")){
-                    convertWordtoNumber();
+                if(data.equals("Numeric")){
+                    converterNumbertoWord();
+
                 }
                 else{
-                    converterNumbertoWord();
+                    convertWordtoNumber();
                 }
             }
         });
