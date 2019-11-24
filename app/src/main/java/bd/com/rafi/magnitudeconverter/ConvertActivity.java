@@ -28,6 +28,7 @@ Button button;
         e2=(EditText)findViewById(R.id.e2);
         t1=(TextView)findViewById(R.id.t1);
         t2=(TextView)findViewById(R.id.t2);
+
         button=(Button)findViewById(R.id.Convert);
         final String data=getIntent().getStringExtra("data");
         //getActionBar().setTitle(data);
