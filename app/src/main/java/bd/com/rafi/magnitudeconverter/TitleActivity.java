@@ -73,14 +73,12 @@ public class TitleActivity extends AppCompatActivity  implements View.OnClickLis
             public boolean onMenuItemClick(MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.menuitem1:
-                        Toast.makeText(TitleActivity.this,"clicking",Toast.LENGTH_SHORT).show();
                         textView1.setText("Numeric");
                         value1 = textView1.getText().toString();
                         Log.e("checking",value1);
                         textView2.setText("Alphabetic");
                         return true;
                     case R.id.menuitem2:
-                        Toast.makeText(TitleActivity.this,"clicking",Toast.LENGTH_SHORT).show();
                         textView1.setText("Alphabetic");
                         value1 = textView1.getText().toString();
                         Log.e("checking",value1);

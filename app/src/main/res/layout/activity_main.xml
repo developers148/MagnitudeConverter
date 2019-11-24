@@ -81,7 +81,7 @@
             android:textSize="10sp" />
 
         <ImageButton
-            android:id="@+id/secimageBtn"
+            android:id="@+id/imageBtn"
             android:layout_width="21dp"
             android:layout_height="18dp"
             android:layout_alignStart="@+id/textv1"
@@ -150,7 +150,7 @@
             android:textSize="10sp"/>
 
         <ImageButton
-            android:id="@+id/imageBtn"
+            android:id="@+id/secimageBtn"
             android:layout_width="21dp"
             android:layout_height="18dp"
             android:layout_alignStart="@+id/sectextv1"
