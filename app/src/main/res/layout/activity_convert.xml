@@ -10,46 +10,114 @@
     tools:context=".ConvertActivity">
 
 
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:padding="10dp"
+        android:text="Million to Billion Converter App"
+        android:textAlignment="center"
+
+
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:fontFamily="@font/bungee_shade" />
+
+    <TextView
+        android:id="@+id/textViewId1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+
+
+        android:padding="10dp"
+        android:text="this is converter"
+
+        android:textColor="#000"
+        android:textSize="30sp"
+        app:fontFamily="@font/butterfly_kids" />
+
+
+
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            android:layout_margin="5dp"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+
+            android:hint="Enter your data"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewId"
-        android:text="Million to Billion Converter App"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:padding="10dp"
+        android:id="@+id/textViewId2"
+
         android:layout_margin="10dp"
 
+        android:padding="10dp"
+        android:text="this is converter"
+
+        android:textColor="#000"
+        android:textSize="30sp"
+        app:fontFamily="@font/butterfly_kids"
+
         android:layout_gravity="center"/>
-
-
-
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText1"
-        android:text="Billion"
-        android:drawableStart="@drawable/number"
-        android:drawableLeft="@drawable/number"
-        android:drawablePadding="10dp"
-        android:layout_margin="20dp"
-        android:padding="10dp"
 
-        />
-    <EditText
-        android:layout_width="match_parent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            android:layout_margin="5dp"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+
+            android:hint="Enter your eamil"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+
+        android:layout_margin="50dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
-        android:text="Million"
-        android:drawableStart="@drawable/million"
-        android:drawableLeft="@drawable/million"
-        android:drawablePadding="10dp"
-        android:layout_margin="20dp"
-        android:padding="10dp"
-
-        />
+        android:background="@drawable/button_design"
+        android:text="Convert"
+        android:id="@+id/buttonConvet"/>
 
 
 
