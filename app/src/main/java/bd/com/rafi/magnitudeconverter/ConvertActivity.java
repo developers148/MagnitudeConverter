@@ -65,9 +65,9 @@ Button button;
     public void converterNumbertoWord(){
 
         processor=new NumberToWords.DefaultProcessor();
-            long digit = Long.parseLong(e1.getText().toString());
 
-            e2.setText(processor.getName(digit));
+
+            e2.setText(processor.getName(e1.getText().toString()));
     }
 
     public void convertWordtoNumber(){
