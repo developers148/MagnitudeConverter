@@ -73,7 +73,6 @@ public class WordNNumber {
                 }
                 else {
                     temp = numbers.get(split);
-
                     sum = sum + temp;
                     count=count+1;
                     previous = previous + temp;
