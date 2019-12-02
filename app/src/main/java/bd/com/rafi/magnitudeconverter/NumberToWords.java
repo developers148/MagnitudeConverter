@@ -64,7 +64,7 @@ public class NumberToWords {
             new ScaleUnit(-12, "trillionth", "billionth"),
             new ScaleUnit(-13, "ten-trillionth", "ten-billionth"),
             new ScaleUnit(-14, "hundred-trillionth", "hundred-billionth"),
-            
+
             new ScaleUnit(-15, "quadrillionth", "billiardth"),
             new ScaleUnit(-16, "ten-quadrillionth", "ten-billiardth"),
             new ScaleUnit(-17, "hundred-quadrillionth", "hundred-billiardth"),
