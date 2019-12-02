@@ -1,9 +1,9 @@
 package bd.com.rafi.magnitudeconverter;
 
-import android.util.ArrayMap;
+import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class WordNNumber {
@@ -12,7 +12,6 @@ public class WordNNumber {
 
     static HashMap<String, Integer> onumbers= new HashMap<String, Integer>();
     static HashMap<String, Integer> tnumbers= new HashMap<String, Integer>();
-    static HashMap<String,Integer> valuenumber=new HashMap<>();
 
     static {
         numbers.put("zero", 0);
@@ -52,74 +51,41 @@ public class WordNNumber {
         onumbers.put("billion", 1000000000);
 
         //numbers.put("", );
-
-
-        valuenumber.put("ten",1);
-        valuenumber.put("twenty",2);
-        valuenumber.put("thirty",3);
-        valuenumber.put("fourty",4);
-        valuenumber.put("fifty",5);
-        valuenumber.put("sixty",6);
-        valuenumber.put("seventy",7);
-        valuenumber.put("eighty",8);
-        valuenumber.put("ninety",9);
-        valuenumber.put("hundred",10);
-        valuenumber.put("thousand",11);
-        valuenumber.put("million",12);
-        valuenumber.put("billion",13);
-
     }
 
 
 
-    public static long wordToNumber(String input) {
+    public static long wordToNumber(String input, Context context) {
         System.out.println("===========\nInput string = "+input);
         long sum=0;
-        long temp=0;
-        long previous=0;
+        Integer temp=null;
+        int count=0;
+        Integer previous=0;
         String [] splitted= input.toLowerCase().split(" ");
 
 
-        for (String s:splitted
-             ) {
-            Log.e("spilited",s);
-
-        }
         for(String split:splitted){
 
             if( numbers.get(split)!=null){
-                temp= numbers.get(split);
+                if(count>0){
+                    Toast.makeText(context,"invalid",Toast.LENGTH_SHORT).show();
+                    count=0;
+                }
+                else {
+                    temp = numbers.get(split);
 
-                sum=sum+temp;
-
-                previous=previous+temp;
-
-
-                Log.e("sum",String.valueOf(sum));
-                Log.e("previous",String.valueOf(previous));
+                    sum = sum + temp;
+                    count=count+1;
+                    previous = previous + temp;
+                }
             }
             else if(onumbers.get(split)!=null){
-
-
-                Log.e("value before num",String.valueOf(sum));
-                Log.e("sum",String.valueOf(sum));
-                Log.e("previous",String.valueOf(previous));
-                Log.e("temp",String.valueOf(temp));
-
                 if(sum!=0){
                     sum=sum-previous;
                 }
-                sum=sum+((long)previous)*(long)onumbers.get(split);
-
-                temp=0;
+                sum=sum+(long)previous*(long)onumbers.get(split);
+                temp=null;
                 previous=0;
-
-
-
-                Log.e("value before num",String.valueOf(sum));
-                Log.e("sum",String.valueOf(sum));
-                Log.e("previous",String.valueOf(previous));
-                Log.e("temp",String.valueOf(temp));
 
 
             }
@@ -134,7 +100,5 @@ public class WordNNumber {
 
         return sum;
     }
-
-
 
 }
