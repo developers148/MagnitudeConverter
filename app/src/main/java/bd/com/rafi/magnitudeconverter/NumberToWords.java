@@ -51,7 +51,8 @@ public class NumberToWords {
             new ScaleUnit(2, "hundred", "hundred"),
             // new ScaleUnit(1, "ten", "ten"),
             // new ScaleUnit(0, "one", "one"),
-            new ScaleUnit(-1, "tenth", "tenth"), new ScaleUnit(-2, "hundredth", "hundredth"),
+            new ScaleUnit(-1, "tenth", "tenth"),
+            new ScaleUnit(-2, "hundredth", "hundredth"),
             new ScaleUnit(-3, "thousandth", "thousandth"),
             new ScaleUnit(-4, "ten-thousandth", "ten-thousandth"),
             new ScaleUnit(-5, "hundred-thousandth", "hundred-thousandth"),
@@ -64,7 +65,6 @@ public class NumberToWords {
             new ScaleUnit(-12, "trillionth", "billionth"),
             new ScaleUnit(-13, "ten-trillionth", "ten-billionth"),
             new ScaleUnit(-14, "hundred-trillionth", "hundred-billionth"),
-
             new ScaleUnit(-15, "quadrillionth", "billiardth"),
             new ScaleUnit(-16, "ten-quadrillionth", "ten-billiardth"),
             new ScaleUnit(-17, "hundred-quadrillionth", "hundred-billiardth"),
