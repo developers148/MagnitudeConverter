@@ -94,7 +94,6 @@ public class WordNNumber {
 
                 previous=temp;
             }
-
         }
 
         return sum;
