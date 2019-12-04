@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/ConvertDollarToBDT" android:title="Convert Dollar to BDT"/>
-    <item android:id="@+id/LengthConverter" android:title="Length converter"/>
-    <item android:id="@+id/NumberConverter" android:title="Number Converter"/>
-    <item android:id="@+id/NumbersToWord" android:title="Numbers to Word"/>
-    <item android:id="@+id/pressureConverter" android:title="pressure Converter"/>
-    <item android:id="@+id/timeConverter" android:title="Time converter"/>
-    <item android:id="@+id/weightMassConverter" android:title="Weight Mass Converter"/>
-    <item android:id="@+id/wordToNumber" android:title="Word to Number"/>
+
+
 </menu>
