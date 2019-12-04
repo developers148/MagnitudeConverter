@@ -57,8 +57,8 @@
 
         <TextView
             android:id="@+id/sectextv2"
-            android:layout_width="60dp"
-            android:layout_height="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignStart="@+id/textv1"
             android:layout_alignLeft="@+id/textv1"
             android:layout_alignTop="@+id/textv1"
@@ -129,8 +129,8 @@
 
         <TextView
             android:id="@+id/itemtext2"
-            android:layout_width="83dp"
-            android:layout_height="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignStart="@+id/itemtextview"
             android:layout_alignLeft="@+id/itemtextview"
             android:layout_alignTop="@+id/itemtextview"
@@ -198,8 +198,8 @@
 
         <TextView
             android:id="@+id/textv2"
-            android:layout_width="33dp"
-            android:layout_height="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignStart="@+id/sectextv1"
             android:layout_alignLeft="@+id/sectextv1"
             android:layout_alignTop="@+id/sectextv1"
