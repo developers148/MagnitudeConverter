@@ -1,5 +1,9 @@
 package bd.com.rafi.magnitudeconverter;
 
+import android.content.Context;
+import android.util.Log;
+import android.widget.Toast;
+
 import java.util.HashMap;
 
 public class WordNNumber {
@@ -51,10 +55,11 @@ public class WordNNumber {
 
 
 
-    public static long wordToNumber(String input) {
+    public static long wordToNumber(String input, Context context) {
         System.out.println("===========\nInput string = "+input);
         long sum=0;
         Integer temp=null;
+        int count=0;
         Integer previous=0;
         String [] splitted= input.toLowerCase().split(" ");
 
@@ -62,11 +67,16 @@ public class WordNNumber {
         for(String split:splitted){
 
             if( numbers.get(split)!=null){
-                temp= numbers.get(split);
-
-                sum=sum+temp;
-
-                previous=previous+temp;
+                if(count>0){
+                    Toast.makeText(context,"invalid",Toast.LENGTH_SHORT).show();
+                    count=0;
+                }
+                else {
+                    temp = numbers.get(split);
+                    sum = sum + temp;
+                    count=count+1;
+                    previous = previous + temp;
+                }
             }
             else if(onumbers.get(split)!=null){
                 if(sum!=0){
