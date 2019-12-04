@@ -28,6 +28,7 @@ public class TitleActivity extends AppCompatActivity {
     TextView textView1, textView2,textView;
     Button submitBtn;
     ArrayList<String> catagory,Item,Subitem;
+    int skip=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,6 +119,9 @@ public class TitleActivity extends AppCompatActivity {
     private void showPopup3(View v){
         PopupMenu popupMenu=new PopupMenu(this,v);
         for(int j=0;j<Subitem.size();j++){
+            if(skip==j) {
+                continue;
+            }
             popupMenu.getMenu().add(Subitem.get(j));
         }
         popupMenu.getMenuInflater().inflate(R.menu.popup,popupMenu.getMenu());
@@ -125,7 +129,7 @@ public class TitleActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
                 CharSequence charSequence=menuItem.getTitle();
-
+                   textView2.setText(charSequence);
                 return true;
             }
         });
@@ -143,7 +147,9 @@ public class TitleActivity extends AppCompatActivity {
                 @Override
                 public boolean onMenuItemClick(MenuItem menuItem) {
                     CharSequence charSequence=menuItem.getTitle();
-
+                    textView.setText(charSequence);
+                    skip=Item.indexOf(charSequence);
+                    textView2.setText(charSequence);
                     return true;
                 }
             });
