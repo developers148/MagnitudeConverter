@@ -26,10 +26,7 @@
         android:textStyle="bold"
         app:fontFamily="@font/lobster" />
 
-<!--    <view-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_weight="1"/>-->
+
 
     <RelativeLayout
         android:id="@+id/rellayout2"
@@ -56,12 +53,12 @@
             android:paddingStart="8dp"
             android:paddingLeft="12dp"
             android:paddingTop="10dp"
-            android:text="Numeric" />
+            android:text="Category" />
 
         <TextView
             android:id="@+id/sectextv2"
-            android:layout_width="83dp"
-            android:layout_height="25dp"
+            android:layout_width="60dp"
+            android:layout_height="11dp"
             android:layout_alignStart="@+id/textv1"
             android:layout_alignLeft="@+id/textv1"
             android:layout_alignTop="@+id/textv1"
@@ -71,11 +68,11 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="-8dp"
-            android:layout_marginEnd="268dp"
-            android:layout_marginRight="268dp"
-            android:layout_marginBottom="26dp"
+            android:layout_marginEnd="291dp"
+            android:layout_marginRight="291dp"
+            android:layout_marginBottom="39dp"
             android:background="@drawable/textviewbackground"
-            android:text="Convert From"
+            android:text="Category"
             android:textAlignment="center"
             android:textColor="#000"
             android:textSize="10sp" />
@@ -90,6 +87,78 @@
             android:layout_alignEnd="@+id/textv1"
             android:layout_alignRight="@+id/textv1"
             android:layout_alignBottom="@+id/textv1"
+            android:layout_marginStart="332dp"
+            android:layout_marginLeft="332dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_arrow_downward_black_24dp" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/itemlayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <TextView
+            android:id="@+id/itemtextview"
+            android:layout_width="369dp"
+            android:layout_height="43dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:textColor="#000"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/textviewbackground"
+            android:paddingStart="8dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:text="Numeric" />
+
+        <TextView
+            android:id="@+id/itemtext2"
+            android:layout_width="83dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/itemtextview"
+            android:layout_alignLeft="@+id/itemtextview"
+            android:layout_alignTop="@+id/itemtextview"
+            android:layout_alignEnd="@+id/itemtextview"
+            android:layout_alignRight="@+id/itemtextview"
+            android:layout_alignBottom="@+id/itemtextview"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginEnd="268dp"
+            android:layout_marginRight="268dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/textviewbackground"
+            android:text="Convert From"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/itembutton1"
+            android:layout_width="21dp"
+            android:layout_height="18dp"
+            android:layout_alignStart="@+id/itemtextview"
+            android:layout_alignLeft="@+id/itemtextview"
+            android:layout_alignTop="@+id/itemtextview"
+            android:layout_alignEnd="@+id/itemtextview"
+            android:layout_alignRight="@+id/itemtextview"
+            android:layout_alignBottom="@+id/itemtextview"
             android:layout_marginStart="332dp"
             android:layout_marginLeft="332dp"
             android:layout_marginTop="9dp"
