@@ -11,9 +11,6 @@
     tools:context=".TitleActivity"
     android:padding="15dp">
 
-
-
-
     <TextView
         android:id="@+id/HeadtextView"
         android:layout_width="wrap_content"
@@ -186,15 +183,15 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="7dp"
-            android:layout_marginRight="7dp"
-            android:textColor="#000"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
             android:layout_marginBottom="12dp"
             android:background="@drawable/textviewbackground"
             android:paddingStart="8dp"
             android:paddingLeft="12dp"
             android:paddingTop="10dp"
-            android:text="Alphabetic" />
+            android:text="Alphabetic"
+            android:textColor="#000" />
 
         <TextView
             android:id="@+id/textv2"
@@ -237,6 +234,75 @@
 
             android:background="@drawable/ic_arrow_downward_black_24dp" />
 
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellayout3"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <TextView
+            android:id="@+id/textv3"
+            android:layout_width="369dp"
+            android:layout_height="43dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:textColor="#000"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/textviewbackground"
+            android:paddingStart="8dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:text="Numeric" />
+
+        <TextView
+            android:id="@+id/thirdtextv2"
+            android:layout_width="83dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/textv3"
+            android:layout_alignLeft="@+id/textv3"
+            android:layout_alignTop="@+id/textv3"
+            android:layout_alignEnd="@+id/textv3"
+            android:layout_alignRight="@+id/textv3"
+            android:layout_alignBottom="@+id/textv3"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginEnd="268dp"
+            android:layout_marginRight="268dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/textviewbackground"
+            android:text="Converted To"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/thirdimageBtn"
+            android:layout_width="21dp"
+            android:layout_height="18dp"
+            android:layout_alignStart="@+id/textv3"
+            android:layout_alignLeft="@+id/textv3"
+            android:layout_alignTop="@+id/textv3"
+            android:layout_alignEnd="@+id/textv3"
+            android:layout_alignRight="@+id/textv3"
+            android:layout_alignBottom="@+id/textv3"
+            android:layout_marginStart="332dp"
+            android:layout_marginLeft="332dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_arrow_downward_black_24dp" />
 
     </RelativeLayout>
 
