@@ -4,9 +4,9 @@ import android.util.Log;
 
 public class ConverterDollarToBDT {
 
-    float CurrencyConverter(float Dvalue, String convertFrom,String convertTo){
-        Log.d("convertFrom2", convertFrom);
-        Log.d("convertTo2", convertTo);
+    public float CurrencyConverter(float Dvalue, String convertFrom,String convertTo){
+        /*Log.d("convertFrom2", convertFrom);
+        Log.d("convertTo2", convertTo);*/
         if(convertFrom.equals("USA(Dollar)")){
             if(convertTo.equals("Bangladesh(Bdt)")){
                 return (float) (Dvalue*84.71);

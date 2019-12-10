@@ -9,7 +9,15 @@
         <item>In Numeric</item>
 
     </string-array>
+    <string-array name="currency">
+        <item>Doller $</item>
+        <item>BDT</item>
+        <item>Rupee</item>
+        <item>Pound</item>
+        <item>Yuan</item>
+        <item>Dirham</item>
 
+    </string-array>
 
 
 </resources>

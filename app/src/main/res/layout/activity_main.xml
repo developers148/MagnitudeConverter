@@ -28,11 +28,13 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <RelativeLayout
+                android:id="@+id/currency"
                 android:layout_width="140dp"
                 android:layout_gravity="center"
                 android:layout_height="100dp">
                 <TextView
-                    android:id="@+id/text"
+                    android:onClick="click"
+                    android:id="@+id/currencytext"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_alignParentStart="true"
@@ -48,20 +50,22 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true" />
                 <ImageView
+                    android:onClick="click"
+                    android:id="@+id/currencyimage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/text"
-                    android:layout_alignTop="@+id/text"
-                    android:layout_alignEnd="@+id/text"
-                    android:layout_alignBottom="@+id/text"
+                    android:layout_alignStart="@+id/currencytext"
+                    android:layout_alignTop="@+id/currencytext"
+                    android:layout_alignEnd="@+id/currencytext"
+                    android:layout_alignBottom="@+id/currencytext"
                     android:layout_gravity="center"
                     android:layout_marginStart="17dp"
                     android:layout_marginTop="-19dp"
                     android:layout_marginEnd="17dp"
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/currency"
-                    android:layout_alignLeft="@+id/text"
-                    android:layout_alignRight="@+id/text" />
+                    android:layout_alignLeft="@+id/currencytext"
+                    android:layout_alignRight="@+id/currencytext" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"

@@ -1,5 +1,7 @@
 package bd.com.rafi.magnitudeconverter;
 
+import android.util.Log;
+
 import java.util.Arrays;
 
 public class LengthConverter {
@@ -39,9 +41,11 @@ public class LengthConverter {
         this.value=Double.parseDouble(value);
         this.a=a.toLowerCase();
         this.b=b.toLowerCase();
-        double c;
+        double c=0;
+        Log.e("from lennth",this.a+this.b+value);
         try {
-             c=list[Arrays.asList(name).indexOf(a)][Arrays.asList(name).indexOf(b)]*this.value;
+             c=list[Arrays.asList(name).indexOf(this.a)][Arrays.asList(name).indexOf(this.b)]*this.value;
+
         } catch (Exception e) {
             return "inptut wrong syntex";
         }
