@@ -55,7 +55,7 @@ public class WordNNumber {
 
 
 
-    public static long wordToNumber(String input, Context context) {
+    public static long wordToNumber(String input) {
         System.out.println("===========\nInput string = "+input);
         long sum=0;
         Integer temp=null;
@@ -68,7 +68,7 @@ public class WordNNumber {
 
             if( numbers.get(split)!=null){
                 if(count>0){
-                    Toast.makeText(context,"invalid",Toast.LENGTH_SHORT).show();
+                    Log.e("error","invalid");
                     count=0;
                 }
                 else {

@@ -3,50 +3,53 @@ package bd.com.rafi.magnitudeconverter;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-
-import android.os.Build;
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Log;
+
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.PopupMenu;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ConvertActivity extends AppCompatActivity {
     EditText e1,e2,e3;
-    TextView convertiontype,t2;
+
+   // TextView convertiontype,t2;
     ImageButton imagebtn,imagebtn2;
     Button convert;
     ArrayList<String> item,subitem;
     int skip=0;
     String from,to;
-    static public NumberToWords.AbstractProcessor processor;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_convert);
-        // s1=findViewById(R.id.spinner1);
-        imagebtn=(ImageButton)findViewById(R.id.imagebutton);
-        imagebtn2=(ImageButton)findViewById(R.id.imagebutton1);
-       convertiontype=(TextView)findViewById(R.id.convertiontype);
-        convert=(Button)findViewById(R.id.convert);
-       e1=(EditText)findViewById(R.id.spinner);
-       e2=(EditText)findViewById(R.id.spinner1);
-       e3=(EditText)findViewById(R.id.spinner2);
+        imagebtn=findViewById(R.id.imagebutton);
+        imagebtn2=findViewById(R.id.imagebutton1);
+        convert=findViewById(R.id.convert);
+        e1=findViewById(R.id.spinner);
+        e2=findViewById(R.id.spinner1);
+        e3=findViewById(R.id.spinner2);
+
+
+
+
+
         final String data=getIntent().getStringExtra("value");
-        convertiontype.setText(data);
         dataload(data);
+
         imagebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,37 +62,57 @@ public class ConvertActivity extends AppCompatActivity {
                 showPopup3(view);
             }
         });
+
         convert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                InputMethodManager imm = (InputMethodManager) ConvertActivity.this.getSystemService(Activity.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
                 if (data.equals("Currency")) {
 
                 ConverterDollarToBDT converterDollarToBDT = new ConverterDollarToBDT();
+                String result=String.valueOf(converterDollarToBDT.CurrencyConverter(Float.valueOf(e1.getText().toString()), from, to));
+                e3.setText(result);
 
-                e3.setText(String.valueOf(converterDollarToBDT.CurrencyConverter(Float.valueOf(e1.getText().toString()), from, to)));
+
+
+
+               // e3.setText();
             }
                 else if(data.equals("Length")){
                     LengthConverter lengthConverter=new LengthConverter();
-                   // Log.e("kenthg",lengthConverter.getresult("Kilometer","Meter","12"));
                     e3.setText(String.valueOf(lengthConverter.getresult(from, to,e1.getText().toString())));
                 }
                 else if(data.equals("Number")){
-
+                    NumberConversion n=new NumberConversion();
+                   e3.setText(n.numberSystemConversion(e1.getText().toString(),from,to));
                 }
                 else if(data.equals("Word")){
-
+                      if(from.equals("Word")){
+                         e3.setText(String.valueOf(WordNNumber.wordToNumber(e1.getText().toString())));
+                      }
+                      else{
+                          NumberToWords.AbstractProcessor processor;
+                          processor=new NumberToWords.DefaultProcessor();
+                          e3.setText(processor.getName(e1.getText().toString()));
+                      }
                 }
                 else if(data.equals("Pressure")){
+                 PressureConverter p=new PressureConverter();
+                 e3.setText(p.BarToPascal(e1.getText().toString(),from,to));
 
                 }
                 else if(data.equals("Temperature")){
-
+                  TempCon t=new TempCon();
+                  e3.setText(t.tempConversion(e1.getText().toString(),from,to));
                 }
                 else if(data.equals("Time")){
-
+                       TimeConversion t=new TimeConversion();
+                       e3.setText(t.time(e1.getText().toString(),from,to));
                 }
                 else if(data.equals("Weight")){
-
+                       WeightMassConverter w=new WeightMassConverter();
+                       e3.setText(w.weightToMass(e1.getText().toString(),from,to));
                 }
             }
         });
@@ -97,51 +120,9 @@ public class ConvertActivity extends AppCompatActivity {
 
 
 
-        //getActionBar().setTitle(data);
-        /*if(data.equals("Numeric")){
-            t2.setText("word");
-            t1.setText("Numeric");
-            //e2.setEnabled(false);
-        }
-        else{
-            t1.setText("word");
-            t2.setText("Numeric");
-
-           // e2.setEnabled(false);
-
-        }
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(data.equals("Numeric")){
-                    converterNumbertoWord();
-
-                }
-                else{
-                    convertWordtoNumber();
-                }
-            }
-        });*/
-
-
     }
 
 
-
-    public void converterNumbertoWord(){
-
-        processor=new NumberToWords.DefaultProcessor();
-
-
-            e2.setText(processor.getName(e1.getText().toString()));
-    }
-
-    public void convertWordtoNumber(){
-        String word=e1.getText().toString();
-        long digit=WordNNumber.wordToNumber(word,ConvertActivity.this);
-       // Toast.makeText(ConvertActivity.this,digit,Toast.LENGTH_SHORT).show();
-        e2.setText(Long.toString(digit));
-    }
 
     public void dataload(String value){
           item=new ArrayList<>();
@@ -149,14 +130,12 @@ public class ConvertActivity extends AppCompatActivity {
 
         final String [] currencylist = {"USA(Dollar)","Bangladesh(Bdt)","India(Rupee)","Uk(Pound)","UAE(Dirham)","China(Yuan)"};
         final String [] lengthlist={"Kilometer","Meter","Centimeter","Millimeter","Micrometer","Mile","Yard","Foot","Inch"};
-        final String [] pressurelist = {"Bar","Pascal","Kilo Pascal","PSI","ATM"};
+        final String [] pressurelist = {"Bar","Pascal","KiloPascal","PSI","ATM"};
         final String [] temparaturelist = {"Centigrade","Fahrenheit","Kelvin"};
         final String [] weightlist = {"Kilogram","Gram","Pound","Ton","Ounce"};
-
         final String [] timelist = {"Minuite","Second","Hour","Day","Week","Year"};
         final String [] numberlist= {"Decimal","Octal","Binary","Hexadecimal"};
         final String [] wordtonumber = {"Word","Number"};
-        final String [] numbertoword = {"Number","Word"};
 
 
         if(value.equals("Currency")){
@@ -177,6 +156,56 @@ public class ConvertActivity extends AppCompatActivity {
             from=item.get(0);
             to=item.get(1);
         }
+        else if(value.equals("Number")){
+            item.addAll(Arrays.asList(numberlist));
+            subitem.addAll(Arrays.asList(numberlist));
+            e1.setHint(item.get(0));
+            e2.setHint(item.get(1));
+            from=item.get(0);
+            to=item.get(1);
+        }
+        else if(value.equals("Word")){
+            item.addAll(Arrays.asList(wordtonumber));
+            subitem.addAll(Arrays.asList(wordtonumber));
+            e1.setHint(item.get(0));
+            e2.setHint(item.get(1));
+            from=item.get(0);
+            to=item.get(1);
+        }
+        else if(value.equals("Pressure")){
+            item.addAll(Arrays.asList(pressurelist));
+            subitem.addAll(Arrays.asList(pressurelist));
+            e1.setHint(item.get(0));
+            e2.setHint(item.get(1));
+            from=item.get(0);
+            to=item.get(1);
+        }
+        else if(value.equals("Time")){
+            item.addAll(Arrays.asList(timelist));
+            subitem.addAll(Arrays.asList(timelist));
+            e1.setHint(item.get(0));
+            e2.setHint(item.get(1));
+            from=item.get(0);
+            to=item.get(1);
+        }
+        else if(value.equals("Weight")){
+            item.addAll(Arrays.asList(weightlist));
+            subitem.addAll(Arrays.asList(weightlist));
+            e1.setHint(item.get(0));
+            e2.setHint(item.get(1));
+            from=item.get(0);
+            to=item.get(1);
+        }
+        else if(value.equals("Temperature")){
+            item.addAll(Arrays.asList(temparaturelist));
+            subitem.addAll(Arrays.asList(temparaturelist));
+            e1.setHint(item.get(0));
+            e2.setHint(item.get(1));
+            from=item.get(0);
+            to=item.get(1);
+        }
+
+
     }
     private void showPopup2(View v){
         PopupMenu popupMenu=new PopupMenu(this,v);
@@ -207,9 +236,6 @@ public class ConvertActivity extends AppCompatActivity {
     private void showPopup3(View v){
         PopupMenu popupMenu=new PopupMenu(this,v);
         for(int j=0;j<subitem.size();j++){
-            /*if(skip==j) {
-                continue;
-            }*/
             popupMenu.getMenu().add(subitem.get(j));
         }
         popupMenu.getMenuInflater().inflate(R.menu.popup,popupMenu.getMenu());

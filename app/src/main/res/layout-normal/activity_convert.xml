@@ -22,6 +22,7 @@
 
 
     <LinearLayout
+        android:id="@+id/linearlayoutt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#fff"
@@ -40,6 +41,7 @@
                 android:hint="USD"
                 android:paddingStart="20dp"
                 android:layout_margin="8dp"
+                android:textSize="16sp"
                 android:background="@drawable/border"
                 android:paddingLeft="20dp"
                 />
@@ -105,6 +107,7 @@
                 android:layout_height="45dp"
                 android:layout_margin="8dp"
                 android:paddingStart="20dp"
+                android:textSize="16sp"
                 android:hint="BDT"
                 android:background="@drawable/border"
                 android:paddingLeft="20dp" />
@@ -153,6 +156,79 @@
 
     </LinearLayout>
 
+   <!-- <LinearLayout
+        android:id="@+id/copylayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/mylayoutcopy"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/spinnercopy"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="USD"
+                android:paddingStart="20dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/border"
+                android:paddingLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignTop="@+id/spinnercopy"
+                android:layout_alignBottom="@+id/spinnercopy"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="-8dp"
+                android:layout_marginEnd="339dp"
+                android:layout_marginRight="339dp"
+                android:layout_marginBottom="38dp"
+                android:background="#fff"
+                android:text="From"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/imagebuttoncopy"
+                android:layout_width="20dp"
+                android:layout_height="21dp"
+                android:layout_alignStart="@+id/spinnercopy"
+                android:layout_alignLeft="@+id/spinnercopy"
+                android:layout_alignTop="@+id/spinnercopy"
+                android:layout_alignEnd="@+id/spinnercopy"
+                android:layout_alignRight="@+id/spinnercopy"
+                android:layout_alignBottom="@+id/spinnercopy"
+                android:layout_marginStart="350dp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginBottom="14dp"
+                android:background="#fff"
+                android:src="@drawable/ic_arrow_downward_black_24dp" />
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+-->
 
     <Button
         android:id="@+id/convert"
@@ -174,7 +250,7 @@
 
     <RelativeLayout
         android:id="@+id/mylayout2"
-        android:visibility="visible"
+
         android:layout_width="match_parent"
         android:layout_margin="8dp"
         android:layout_height="0dp"
@@ -187,12 +263,13 @@
             android:layout_margin="8dp"
             android:paddingStart="20dp"
             android:hint="BDT"
+
             android:background="@drawable/border"
             android:paddingLeft="20dp" />
 
         <TextView
-            android:layout_width="24dp"
-            android:layout_height="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
             android:layout_alignTop="@+id/spinner2"
             android:layout_alignBottom="@+id/spinner2"
             android:layout_alignParentStart="true"
@@ -201,10 +278,10 @@
             android:layout_alignParentRight="true"
             android:layout_marginStart="19dp"
             android:layout_marginLeft="19dp"
-            android:layout_marginTop="-10dp"
+            android:layout_marginTop="-5dp"
             android:layout_marginEnd="350dp"
-            android:layout_marginRight="124dp"
-            android:layout_marginBottom="350dp"
+            android:layout_marginRight="350dp"
+            android:layout_marginBottom="354dp"
             android:background="#fff"
             android:text="@string/to"
             android:textAlignment="center"
