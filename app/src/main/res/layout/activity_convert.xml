@@ -15,7 +15,7 @@
         android:layout_marginTop="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Currency"
+        android:text="@string/currency"
         android:layout_marginLeft="16dp"
         android:textColor="#000"
         android:textSize="20sp"/>
@@ -37,7 +37,7 @@
                 android:id="@+id/spinner"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:hint="USD"
+                android:hint="@string/usd"
                 android:paddingStart="20dp"
                 android:layout_margin="8dp"
                 android:background="@drawable/border"
@@ -60,7 +60,7 @@
                 android:layout_marginRight="109dp"
                 android:layout_marginBottom="38dp"
                 android:background="#fff"
-                android:text="From"
+                android:text="@string/from"
                 android:textAlignment="center"
                 android:textColor="#000"
                 android:textSize="12sp" />

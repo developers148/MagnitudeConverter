@@ -14,7 +14,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="4sp"
             android:textSize="20sp"
-            android:text="Categories" />
+            android:text="@string/categories"
+            android:layout_marginStart="47dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,7 +43,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="22dp"
-                    android:text="Currency"
+                    android:text="@string/currency"
                     android:gravity="center"
                     android:textColor="#707070"
                     android:layout_marginBottom="2dp"
@@ -65,7 +66,8 @@
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/currency"
                     android:layout_alignLeft="@+id/currencytext"
-                    android:layout_alignRight="@+id/currencytext" />
+                    android:layout_alignRight="@+id/currencytext"
+                    android:contentDescription="@string/currencysrc" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -85,7 +87,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="22dp"
-                    android:text="Length"
+                    android:text="@string/length"
                     android:gravity="center"
                     android:textColor="#707070"
                     android:layout_marginBottom="2dp"
@@ -106,7 +108,8 @@
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/length"
                     android:layout_alignLeft="@+id/text1"
-                    android:layout_alignRight="@+id/text1" />
+                    android:layout_alignRight="@+id/text1"
+                    android:contentDescription="@string/length" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -140,7 +143,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="22dp"
-                    android:text="Number"
+                    android:text="@string/number"
                     android:gravity="center"
                     android:textColor="#707070"
                     android:layout_marginBottom="2dp"
@@ -161,7 +164,8 @@
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/number"
                     android:layout_alignLeft="@+id/text2"
-                    android:layout_alignRight="@+id/text2" />
+                    android:layout_alignRight="@+id/text2"
+                    android:contentDescription="@string/number" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -181,7 +185,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="22dp"
-                    android:text="Word"
+                    android:text="@string/word"
                     android:gravity="center"
                     android:textColor="#707070"
                     android:layout_marginBottom="2dp"
@@ -202,7 +206,8 @@
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/numbertoword"
                     android:layout_alignLeft="@+id/text3"
-                    android:layout_alignRight="@+id/text3" />
+                    android:layout_alignRight="@+id/text3"
+                    android:contentDescription="@string/word" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -236,7 +241,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="22dp"
-                    android:text="Pressure"
+                    android:text="@string/pressure"
                     android:gravity="center"
                     android:textColor="#707070"
                     android:layout_marginBottom="2dp"
@@ -257,7 +262,8 @@
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/pressure"
                     android:layout_alignLeft="@+id/text4"
-                    android:layout_alignRight="@+id/text4" />
+                    android:layout_alignRight="@+id/text4"
+                    android:contentDescription="@string/pressure" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -277,7 +283,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="22dp"
-                    android:text="Temparature"
+                    android:text="@string/temparature"
                     android:gravity="center"
                     android:textColor="#707070"
                     android:layout_marginBottom="2dp"
@@ -298,7 +304,8 @@
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/temparature"
                     android:layout_alignLeft="@+id/text5"
-                    android:layout_alignRight="@+id/text5" />
+                    android:layout_alignRight="@+id/text5"
+                    android:contentDescription="@string/temparature" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -328,7 +335,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="22dp"
-                    android:text="Time"
+                    android:text="@string/time"
                     android:gravity="center"
                     android:textColor="#707070"
                     android:layout_marginBottom="2dp"
@@ -349,7 +356,8 @@
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/time"
                     android:layout_alignLeft="@+id/text6"
-                    android:layout_alignRight="@+id/text6" />
+                    android:layout_alignRight="@+id/text6"
+                    android:contentDescription="@string/time" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -369,7 +377,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="22dp"
-                    android:text="Weight"
+                    android:text="@string/weight"
                     android:gravity="center"
                     android:textColor="#707070"
                     android:layout_marginBottom="2dp"
@@ -390,7 +398,8 @@
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/weight"
                     android:layout_alignLeft="@+id/text7"
-                    android:layout_alignRight="@+id/text7" />
+                    android:layout_alignRight="@+id/text7"
+                    android:contentDescription="@string/weight" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
