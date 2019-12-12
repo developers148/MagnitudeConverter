@@ -131,7 +131,7 @@ public class ConvertActivity extends AppCompatActivity {
         final String [] currencylist = {"USA(Dollar)","Bangladesh(Bdt)","India(Rupee)","Uk(Pound)","UAE(Dirham)","China(Yuan)"};
         final String [] lengthlist={"Kilometer","Meter","Centimeter","Millimeter","Micrometer","Mile","Yard","Foot","Inch"};
         final String [] pressurelist = {"Bar","Pascal","KiloPascal","PSI","ATM"};
-        final String [] temparaturelist = {"Centigrade","Fahrenheit","Kelvin"};
+        final String [] temparaturelist = {"Celsius","Fahrenheit","Kelvin"};
         final String [] weightlist = {"Kilogram","Gram","Pound","Ton","Ounce"};
         final String [] timelist = {"Minuite","Second","Hour","Day","Week","Year"};
         final String [] numberlist= {"Decimal","Octal","Binary","Hexadecimal"};
