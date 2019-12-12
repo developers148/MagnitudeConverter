@@ -1,133 +1,116 @@
 package bd.com.rafi.magnitudeconverter;
 
-import android.util.Log;
 
-public class ConverterDollarToBDT {
+class ConverterDollarToBDT {
 
-    public float CurrencyConverter(float Dvalue, String convertFrom,String convertTo){
+    float CurrencyConverter(float Dvalue, String convertFrom, String convertTo){
         /*Log.d("convertFrom2", convertFrom);
         Log.d("convertTo2", convertTo);*/
-        if(convertFrom.equals("USA(Dollar)")){
-            if(convertTo.equals("Bangladesh(Bdt)")){
-                return (float) (Dvalue*84.71);
-            }else if (convertTo.equals("India(Rupee)")){
-                return (float) (Dvalue*71.72);
-            }else if (convertTo.equals("Uk(Pound)")){
-                return (float) (Dvalue*0.77);
-            }
-            else if (convertTo.equals("UAE(Dirham)")){
-                return (float) (Dvalue*3.67);
-            }
-            else if (convertTo.equals("China(Yuan)")){
-                return (float) (Dvalue*7.03);
-            }
-            else if (convertTo.equals("USA(Dollar)")){
-                return (float) (Dvalue*1.0);
-            }
-        }//end dollar if
+        switch (convertFrom) {
+            case "USA(Dollar)":
+                switch (convertTo) {
+                    case "Bangladesh(Bdt)":
+                        return (float) (Dvalue * 84.71);
+                    case "India(Rupee)":
+                        return (float) (Dvalue * 71.72);
+                    case "Uk(Pound)":
+                        return (float) (Dvalue * 0.77);
+                    case "UAE(Dirham)":
+                        return (float) (Dvalue * 3.67);
+                    case "China(Yuan)":
+                        return (float) (Dvalue * 7.03);
+                    case "USA(Dollar)":
+                        return (float) (Dvalue * 1.0);
+                }
+                break;
+            case "Bangladesh(Bdt)":
+                switch (convertTo) {
+                    case "Bangladesh(Bdt)":
+                        return (float) (Dvalue * 1.0);
+                    case "India(Rupee)":
+                        return (float) (Dvalue * 0.85);
+                    case "Uk(Pound)":
+                        return (float) (Dvalue * 0.0091);
+                    case "UAE(Dirham)":
+                        return (float) (Dvalue * 0.043);
+                    case "China(Yuan)":
+                        return (float) (Dvalue * 0.083);
+                    case "USA(Dollar)":
+                        return (float) (Dvalue * 0.012);
+                }
 
 
-       else if(convertFrom.equals("Bangladesh(Bdt)")){
-            if(convertTo.equals("Bangladesh(Bdt)")){
-                return (float) (Dvalue*1.0);
-            }else if (convertTo.equals("India(Rupee)")){
-                return (float) (Dvalue*0.85);
-            }else if (convertTo.equals("Uk(Pound)")){
-                return (float) (Dvalue*0.0091);
-            }
-            else if (convertTo.equals("UAE(Dirham)")){
-                return (float) (Dvalue*0.043);
-            }
-            else if (convertTo.equals("China(Yuan)")){
-                return (float) (Dvalue*0.083);
-            }
-            else if (convertTo.equals("USA(Dollar)")){
-                return (float) (Dvalue*0.012);
-            }
+                break;
+            case "India(Rupee)":
+                switch (convertTo) {
+                    case "Bangladesh(Bdt)":
+                        return (float) (Dvalue * 1.18);
+                    case "India(Rupee)":
+                        return (float) (Dvalue * 1.0);
+                    case "Uk(Pound)":
+                        return (float) (Dvalue * 0.011);
+                    case "UAE(Dirham)":
+                        return (float) (Dvalue * 0.051);
+                    case "China(Yuan)":
+                        return (float) (Dvalue * 0.098);
+                    case "USA(Dollar)":
+                        return (float) (Dvalue * 0.012);
+                }
 
+                break;
+            case "Uk(Pound)":
+                switch (convertTo) {
+                    case "Bangladesh(Bdt)":
+                        return (float) (Dvalue * 109.43);
+                    case "India(Rupee)":
+                        return (float) (Dvalue * 92.66);
+                    case "Uk(Pound)":
+                        return (float) (Dvalue * 1.0);
+                    case "UAE(Dirham)":
+                        return (float) (Dvalue * 4.75);
+                    case "China(Yuan)":
+                        return (float) (Dvalue * 9.09);
+                    case "USA(Dollar)":
+                        return (float) (Dvalue * 1.29);
+                }
 
-        }//end bdt if
+                break;
+            case "UAE(Dirham)":
+                switch (convertTo) {
+                    case "Bangladesh(Bdt)":
+                        return (float) (Dvalue * 23.07);
+                    case "India(Rupee)":
+                        return (float) (Dvalue * 19.53);
+                    case "Uk(Pound)":
+                        return (float) (Dvalue * 0.21);
+                    case "UAE(Dirham)":
+                        return (float) (Dvalue * 1.0);
+                    case "China(Yuan)":
+                        return (float) (Dvalue * 1.91);
+                    case "USA(Dollar)":
+                        return (float) (Dvalue * 0.27);
+                }
 
-       else if(convertFrom.equals("India(Rupee)")){
-            if(convertTo.equals("Bangladesh(Bdt)")){
-                return (float) (Dvalue*1.18);
-            }else if (convertTo.equals("India(Rupee)")){
-                return (float) (Dvalue*1.0);
-            }else if (convertTo.equals("Uk(Pound)")){
-                return (float) (Dvalue*0.011);
-            }
-            else if (convertTo.equals("UAE(Dirham)")){
-                return (float) (Dvalue*0.051);
-            }
-            else if (convertTo.equals("China(Yuan)")){
-                return (float) (Dvalue*0.098);
-            }
-            else if (convertTo.equals("USA(Dollar)")){
-                return (float) (Dvalue*0.012);
-            }
+                break;
+            case "China(Yuan)":
+                //else{
+                switch (convertTo) {
+                    case "Bangladesh(Bdt)":
+                        return (float) (Dvalue * 12.04);
+                    case "India(Rupee)":
+                        return (float) (Dvalue * 10.20);
+                    case "Uk(Pound)":
+                        return (float) (Dvalue * 0.11);
+                    case "UAE(Dirham)":
+                        return (float) (Dvalue * 0.52);
+                    case "China(Yuan)":
+                        return (float) (Dvalue * 1.0);
+                    case "USA(Dollar)":
+                        return (float) (Dvalue * 0.14);
+                }
 
-        }//end India if
-
-      else if(convertFrom.equals("Uk(Pound)")){
-            if(convertTo.equals("Bangladesh(Bdt)")){
-                return (float) (Dvalue*109.43);
-            }else if (convertTo.equals("India(Rupee)")){
-                return (float) (Dvalue*92.66);
-            }else if (convertTo.equals("Uk(Pound)")){
-                return (float) (Dvalue*1.0);
-            }
-            else if (convertTo.equals("UAE(Dirham)")){
-                return (float) (Dvalue*4.75);
-            }
-            else if (convertTo.equals("China(Yuan)")){
-                return (float) (Dvalue*9.09);
-            }
-            else if (convertTo.equals("USA(Dollar)")){
-                return (float) (Dvalue*1.29);
-            }
-
-        }//end Pound if
-
-      else if(convertFrom.equals("UAE(Dirham)")){
-            if(convertTo.equals("Bangladesh(Bdt)")){
-                return (float) (Dvalue*23.07);
-            }else if (convertTo.equals("India(Rupee)")){
-                return (float) (Dvalue*19.53);
-            }else if (convertTo.equals("Uk(Pound)")){
-                return (float) (Dvalue*0.21);
-            }
-            else if (convertTo.equals("UAE(Dirham)")){
-                return (float) (Dvalue*1.0);
-            }
-            else if (convertTo.equals("China(Yuan)")){
-                return (float) (Dvalue*1.91);
-            }
-            else if (convertTo.equals("USA(Dollar)")){
-                return (float) (Dvalue*0.27);
-            }
-
-        }//end Dirham if
-
-      else if(convertFrom.equals("China(Yuan)")){
-        //else{
-            if(convertTo.equals("Bangladesh(Bdt)")){
-                return (float) (Dvalue*12.04);
-            }else if (convertTo.equals("India(Rupee)")){
-                return (float) (Dvalue*10.20);
-            }else if (convertTo.equals("Uk(Pound)")){
-                return (float) (Dvalue*0.11);
-            }
-            else if (convertTo.equals("UAE(Dirham)")){
-                return (float) (Dvalue*0.52);
-            }
-            else if (convertTo.equals("China(Yuan)")){
-                return (float) (Dvalue*1.0);
-            }
-            else if (convertTo.equals("USA(Dollar)")){
-                return (float) (Dvalue*0.14);
-            }
-
-        }//end else if
+                break;
+        }
 
 
         return 0;
