@@ -1,18 +1,14 @@
 package bd.com.rafi.magnitudeconverter;
 
-import android.content.Context;
 import android.util.Log;
-import android.widget.Toast;
 
 import java.util.HashMap;
 
-public class WordNNumber {
-
-    static HashMap<String, Integer> numbers= new HashMap<String, Integer>();
-
-    static HashMap<String, Integer> onumbers= new HashMap<String, Integer>();
-    static HashMap<String, Integer> tnumbers= new HashMap<String, Integer>();
-
+@SuppressWarnings("ConstantConditions")
+class WordNNumber {
+    private static HashMap<String, Integer> numbers= new HashMap<>();
+    private static HashMap<String, Integer> onumbers= new HashMap<>();
+    private static HashMap<String, Integer> tnumbers= new HashMap<>();
     static {
         numbers.put("zero", 0);
         numbers.put("one", 1);
@@ -34,8 +30,6 @@ public class WordNNumber {
         numbers.put("seventeen", 17);
         numbers.put("eighteen", 18);
         numbers.put("nineteen", 19);
-
-
         tnumbers.put("twenty", 20);
         tnumbers.put("thirty", 30);
         tnumbers.put("fourty", 40);
@@ -52,23 +46,15 @@ public class WordNNumber {
 
         //numbers.put("", );
     }
-
-
-
-    public static long wordToNumber(String input) {
-        System.out.println("===========\nInput string = "+input);
+    static long wordToNumber(String input) {
         long sum=0;
-        Integer temp=null;
+        Integer temp;
         int count=0;
         Integer previous=0;
         String [] splitted= input.toLowerCase().split(" ");
-
-
         for(String split:splitted){
-
             if( numbers.get(split)!=null){
                 if(count>0){
-                    Log.e("error","invalid");
                     count=0;
                 }
                 else {
@@ -82,20 +68,16 @@ public class WordNNumber {
                 if(sum!=0){
                     sum=sum-previous;
                 }
-                sum=sum+(long)previous*(long)onumbers.get(split);
+                sum += (long) previous * (long) onumbers.get(split);
                 temp=null;
                 previous=0;
-
-
             }
             else if(tnumbers.get(split)!=null){
                 temp=tnumbers.get(split);
                 sum=sum+temp;
-
                 previous=temp;
             }
         }
-
         return sum;
     }
 

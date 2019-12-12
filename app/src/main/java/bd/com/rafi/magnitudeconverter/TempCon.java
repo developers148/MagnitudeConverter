@@ -1,59 +1,47 @@
 package bd.com.rafi.magnitudeconverter;
 
-public class TempCon {
-
-
+class TempCon {
     private String finalresult = null;
-
-
-    public String tempConversion(String value, String convertFrom, String convertTo) {
+    String tempConversion(String value, String convertFrom, String convertTo) {
         double i = 0;
-
-
         try {
             i = Double.parseDouble(value);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        if (convertFrom.toLowerCase().equals("celsius")) {
-            if (convertTo.toLowerCase().equals("celsius")) {
-                finalresult = String.valueOf(i * 1);
-            } else if (convertTo.toLowerCase().equals("fahrenheit")) {
-
-
-                finalresult = String.valueOf((i * (9 / 5)) + 32);
-
-            } else if (convertTo.toLowerCase().equals("kelvin")) {
-                finalresult = String.valueOf(i + 273.15);
-            }
-
-
-        } else if (convertFrom.toLowerCase().equals("fahrenheit")) {
-            if (convertTo.toLowerCase().equals("celsius")) {
-                finalresult = String.valueOf((i - 32) * (5 / 9));
-            } else if (convertTo.toLowerCase().equals("kelvin")) {
-
-                finalresult = String.valueOf((i - 32) * (5 / 9) + 273.15);
-            }
-
-            } else if (convertFrom.toLowerCase().equals("kelvin")) {
-
-
-                if (convertTo.toLowerCase().equals("celsius")) {
-                    finalresult = String.valueOf(i - 273.15);
-
-                } else if (convertTo.toLowerCase().equals("fahrenheit")) {
-
-
-                    finalresult = String.valueOf((i - 273.15) * (9 / 5) + 32);
+        switch (convertFrom) {
+            case "Celsius":
+                switch (convertTo) {
+                    case "Fahrenheit":
+                        finalresult = String.valueOf((i * (9 / 5)) + 32);
+                        break;
+                    case "Kelvin":
+                        finalresult = String.valueOf(i + 273.15);
+                        break;
                 }
-            }
-
-      
-            return finalresult;
-
+                break;
+            case "Fahrenheit":
+                switch (convertTo){
+                    case "Celsius" :
+                        finalresult = String.valueOf((i - 32) * (float) (5 / 9));
+                    break;
+                    case "Fahrenheit" :
+                        finalresult = String.valueOf((i - 32) * (float) (5 / 9) + 273.15);
+                        break;
+                }
+                break;
+            case "Kelvin":
+                switch (convertTo){
+                    case "Celsius":
+                        finalresult = String.valueOf(i - 273.15);
+                        break;
+                    case "Fahrenheit":
+                        finalresult = String.valueOf((i - 273.15) * (9 / 5) + 32);
+                        break;
+                }
+                break;
         }
-
+            return finalresult;
+        }
     }
 

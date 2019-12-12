@@ -132,7 +132,7 @@ public class ConvertActivity extends AppCompatActivity {
         final String [] pressurelist = {"Bar","Pascal","KiloPascal","PSI","ATM"};
         final String [] temparaturelist = {"Celsius","Fahrenheit","Kelvin"};
         final String [] weightlist = {"Kilogram","Gram","Pound","Ton","Ounce"};
-        final String [] timelist = {"Minuite","Second","Hour","Day","Week","Year"};
+        final String [] timelist = {"Minute","Second","Hour","Day","Week","Year"};
         final String [] numberlist= {"Decimal","Octal","Binary","Hexadecimal"};
         final String [] wordtonumber = {"Word","Number"};
 
