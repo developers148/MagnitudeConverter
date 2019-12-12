@@ -26,9 +26,10 @@
         android:layout_marginTop="4dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Currency"
-        android:layout_marginLeft="16dp"
-        android:textColor="#000" />
+        android:text="@string/currency"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:layout_marginStart="10dp" />
 
 
     <LinearLayout
@@ -47,12 +48,14 @@
                 android:id="@+id/spinner"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:hint="USD"
+                android:hint="@string/usd"
                 android:paddingStart="10dp"
                 android:layout_margin="2dp"
                 android:background="@drawable/border"
                 android:paddingLeft="10dp"
-                />
+                android:inputType="number"
+                tools:ignore="RtlSymmetry"
+                android:autofillHints="" />
 
             <TextView
                 android:layout_width="23dp"
