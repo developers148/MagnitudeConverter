@@ -1,10 +1,9 @@
 package bd.com.rafi.magnitudeconverter;
 
-import android.util.Log;
 
 import java.util.Arrays;
 
-public class LengthConverter {
+class LengthConverter {
 
     /*int kilometer = 0;
     int meter = 1;
@@ -16,8 +15,8 @@ public class LengthConverter {
     int yard = 7;
     int foot = 8;
     int inch = 9;*/
-    String[] name = {"kilometer", "meter", "centimeter", "millimeter", "micrometer", "nanometer", "mile", "yard", "foot", "inch"};
-    double[][] list = {
+    private String[] name = {"kilometer", "meter", "centimeter", "millimeter", "micrometer", "nanometer", "mile", "yard", "foot", "inch"};
+    private double[][] list = {
             {1, 1000, 10000, 100000, 1000000, 1000000, 0.6213688756, 1093.6132983, 3280.839895, 39370.07874},
             {0.001, 1, 100, 1000, 1000000, 1000000000, 0.0006213689, 1.0936132983, 3.280839895, 39.37007874},
             {0.00001, 0.01, 1, 10, 10000, 10000000, 0.0000062137, 0.010936133, 0.032808399, 0.3937007874},
@@ -30,9 +29,9 @@ public class LengthConverter {
             {0.0000254, 0.0254, 2.54, 25.4, 25400, 25400000, 0.0000157828, 0.0277777778, 0.0833333333, 1}
     };
 
-    public String getresult(String a, String b, String value) {
+    String getresult(String a, String b, String value) {
 
-        double c = 0;
+        double c;
         try {
             c = list[Arrays.asList(name).indexOf(a.toLowerCase())][Arrays.asList(name).indexOf(b.toLowerCase())] * Double.parseDouble(value);
 

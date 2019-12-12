@@ -56,7 +56,7 @@ class WordNNumber {
                     count=0;
                 }
                 else {
-                    temp = numbers.get(split);;
+                    temp = numbers.get(split);
                     sum = sum + temp;
                     count=count+1;
                     previous = previous + temp;
@@ -67,7 +67,6 @@ class WordNNumber {
                     sum=sum-previous;
                 }
                 sum += (long) previous * (long) onumbers.get(split);
-                temp=null;
                 previous=0;
             }
             else if(tnumbers.get(split)!=null){
