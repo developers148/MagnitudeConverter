@@ -51,7 +51,7 @@ public class WeightMassConverter {
             }else if(ConvertTo.toLowerCase().equals("gram")){
                 finalresult = String.format("%.12f",i*28.349523125);
             }else if(ConvertTo.toLowerCase().equals("ton")){
-                finalresult = String.format("%.12",i*0.0000283495);
+                finalresult = String.format("%.12f",i*0.0000283495);
             }else if(ConvertTo.toLowerCase().equals("pound")){
                 finalresult = String.valueOf(i*0.0625);
             }else if(ConvertTo.toLowerCase().equals("ounce")){
@@ -72,15 +72,16 @@ public class WeightMassConverter {
             }
         }else if(ConvertFrom.toLowerCase().equals("gram")){
             if(ConvertTo.toLowerCase().equals("kilogram")){
-                finalresult = String.format("%.12",i*0.001);
+                finalresult = String.format("%.12f",i*0.001);
+
             }else if(ConvertTo.toLowerCase().equals("gram")){
                 finalresult = String.valueOf(i*1);
             }else if(ConvertTo.toLowerCase().equals("ton")){
-                finalresult = String.format("%.12",i*0.000001);
+                finalresult = String.format("%.12f",i*0.000001);
             }else  if(ConvertTo.toLowerCase().equals("pound")){
-                finalresult = String.format("%.12",i*0.0022046226);
+                finalresult = String.format("%.12f",i*0.0022046226);
             }else  if(ConvertTo.toLowerCase().equals("ounce")){
-                finalresult = String.format("%.12",i*0.0352739619);
+                finalresult = String.format("%.12f",i*0.0352739619);
             }
         }
 
