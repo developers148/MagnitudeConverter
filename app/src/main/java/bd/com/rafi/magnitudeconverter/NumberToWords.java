@@ -1,9 +1,7 @@
 package bd.com.rafi.magnitudeconverter;
 
-import java.util.ArrayList;
-import java.util.List;
 
-public class NumberToWords {
+class NumberToWords {
 
     static public class ScaleUnit {
         private int exponent;
@@ -14,11 +12,11 @@ public class NumberToWords {
             this.names = names;
         }
 
-        public int getExponent() {
+        int getExponent() {
             return exponent;
         }
 
-        public String getName(int index) {
+        String getName(int index) {
             return names[index];
         }
     }
@@ -78,8 +76,8 @@ public class NumberToWords {
             new ScaleUnit(-25, "ten-septillionth", "ten-quadrillionth"),
             new ScaleUnit(-26, "hundred-septillionth", "hundred-quadrillionth"), };
 
-    static public enum Scale {
-        SHORT, LONG;
+    public enum Scale {
+        SHORT;
 
         public String getName(int exponent) {
             for (ScaleUnit unit : SCALE_UNITS) {
@@ -95,33 +93,19 @@ public class NumberToWords {
      * Change this scale to support American and modern British value (short scale) or Traditional
      * British value (long scale)
      */
-    static public Scale SCALE = Scale.SHORT;
+    private static Scale SCALE = Scale.SHORT;
 
     static abstract public class AbstractProcessor {
 
-        static protected final String SEPARATOR = " ";
-        static protected final int NO_VALUE = -1;
+        static final String SEPARATOR = " ";
+        static final int NO_VALUE = -1;
 
-        protected List<Integer> getDigits(long value) {
-            ArrayList<Integer> digits = new ArrayList<Integer>();
-            if (value == 0) {
-                digits.add(0);
-            } else {
-                while (value > 0) {
-                    digits.add(0, (int) value % 10);
-                    value /= 10;
-                }
-            }
-            return digits;
-        }
 
-        public String getName(long value) {
+        String getName(long value) {
             return getName(Long.toString(value));
         }
 
-        public String getName(double value) {
-            return getName(Double.toString(value));
-        }
+
 
         abstract public String getName(String value);
     }
@@ -203,8 +187,6 @@ public class NumberToWords {
 
     static public class HundredProcessor extends AbstractProcessor {
 
-        private int EXPONENT = 2;
-
         private UnitProcessor unitProcessor = new UnitProcessor();
         private TensProcessor tensProcessor = new TensProcessor();
 
@@ -225,6 +207,7 @@ public class NumberToWords {
             if (number >= 100) {
                 buffer.append(unitProcessor.getName(number / 100));
                 buffer.append(SEPARATOR);
+                int EXPONENT = 2;
                 buffer.append(SCALE.getName(EXPONENT));
             }
 
@@ -245,7 +228,7 @@ public class NumberToWords {
         private AbstractProcessor lowProcessor;
         private int exponent;
 
-        public CompositeBigProcessor(int exponent) {
+        CompositeBigProcessor(int exponent) {
             if (exponent <= 3) {
                 lowProcessor = hundredProcessor;
             } else {
@@ -254,19 +237,19 @@ public class NumberToWords {
             this.exponent = exponent;
         }
 
-        public String getToken() {
+        String getToken() {
             return SCALE.getName(getPartDivider());
         }
 
-        protected AbstractProcessor getHighProcessor() {
+        AbstractProcessor getHighProcessor() {
             return hundredProcessor;
         }
 
-        protected AbstractProcessor getLowProcessor() {
+        AbstractProcessor getLowProcessor() {
             return lowProcessor;
         }
 
-        public int getPartDivider() {
+        int getPartDivider() {
             return exponent;
         }
 
@@ -307,11 +290,6 @@ public class NumberToWords {
 
     static public class DefaultProcessor extends AbstractProcessor {
 
-        static private String MINUS = "minus";
-        static private String UNION_AND = "and";
-
-        static private String ZERO_TOKEN = "zero";
-
         private AbstractProcessor processor = new CompositeBigProcessor(63);
 
         @Override
@@ -332,23 +310,26 @@ public class NumberToWords {
             String name = processor.getName(value);
 
             if ("".equals(name)) {
-                name = ZERO_TOKEN;
+                name = "zero";
             } else if (negative) {
+                String MINUS = "minus";
                 name = MINUS.concat(SEPARATOR).concat(name);
             }
 
             if (!(null == decimalValue || "".equals(decimalValue))) {
 
-                String zeroDecimalValue = "";
+                StringBuilder zeroDecimalValue = new StringBuilder();
                 for (int i = 0; i < decimalValue.length(); i++) {
-                    zeroDecimalValue = zeroDecimalValue + "0";
+                    zeroDecimalValue.append("0");
                 }
-                if (decimalValue.equals(zeroDecimalValue)) {
-                    name = name.concat(SEPARATOR).concat(UNION_AND).concat(SEPARATOR).concat(
+                String UNION_AND = "and";
+                String concat = name.concat(SEPARATOR).concat(UNION_AND).concat(SEPARATOR);
+                if (decimalValue.equals(zeroDecimalValue.toString())) {
+                    name = concat.concat(
                             "zero").concat(SEPARATOR).concat(
                             SCALE.getName(-decimalValue.length()));
                 } else {
-                    name = name.concat(SEPARATOR).concat(UNION_AND).concat(SEPARATOR).concat(
+                    name = concat.concat(
                             processor.getName(decimalValue)).concat(SEPARATOR).concat(
                             SCALE.getName(-decimalValue.length()));
                 }
