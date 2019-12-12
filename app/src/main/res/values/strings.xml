@@ -26,6 +26,29 @@
     <string name="from">From</string>
 
 
+    <string name="length">Length</string>
+    <string name="number">Number</string>
+    <string name="word">Word</string>
+    <string name="pressure">Pressure</string>
+    <string name="temparature">Temparature</string>
+    <string name="todo">TODO</string>
+
+    <string name="categories">Categories</string>
+
+    <string name="weight">Weight</string>
+    <string name="time">Time</string>
+    <string name="currency">Currency</string>
+
+
+
+    <string name="usd">USD</string>
+    <string name="from">From</string>
+    <string name="convert">convert</string>
+    <string name="bdt">BDT</string>
+
+
+
+
     <string-array name="spinner_arrays">
         <item>In Word</item>
         <item>In Numeric</item>

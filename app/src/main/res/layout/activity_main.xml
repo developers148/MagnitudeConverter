@@ -67,7 +67,7 @@
                     android:src="@drawable/currency"
                     android:layout_alignLeft="@+id/currencytext"
                     android:layout_alignRight="@+id/currencytext"
-                    android:contentDescription="@string/currencysrc" />
+                    android:contentDescription="@string/todo" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -109,7 +109,7 @@
                     android:src="@drawable/length"
                     android:layout_alignLeft="@+id/text1"
                     android:layout_alignRight="@+id/text1"
-                    android:contentDescription="@string/length" />
+                    android:contentDescription="@string/todo" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -165,7 +165,7 @@
                     android:src="@drawable/number"
                     android:layout_alignLeft="@+id/text2"
                     android:layout_alignRight="@+id/text2"
-                    android:contentDescription="@string/number" />
+                    android:contentDescription="@string/todo" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -207,7 +207,7 @@
                     android:src="@drawable/numbertoword"
                     android:layout_alignLeft="@+id/text3"
                     android:layout_alignRight="@+id/text3"
-                    android:contentDescription="@string/word" />
+                    android:contentDescription="@string/todo" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -263,7 +263,7 @@
                     android:src="@drawable/pressure"
                     android:layout_alignLeft="@+id/text4"
                     android:layout_alignRight="@+id/text4"
-                    android:contentDescription="@string/pressure" />
+                    android:contentDescription="@string/todo" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -305,7 +305,7 @@
                     android:src="@drawable/temparature"
                     android:layout_alignLeft="@+id/text5"
                     android:layout_alignRight="@+id/text5"
-                    android:contentDescription="@string/temparature" />
+                    android:contentDescription="@string/todo" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -357,7 +357,7 @@
                     android:src="@drawable/time"
                     android:layout_alignLeft="@+id/text6"
                     android:layout_alignRight="@+id/text6"
-                    android:contentDescription="@string/time" />
+                    android:contentDescription="@string/todo" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
@@ -399,7 +399,7 @@
                     android:src="@drawable/weight"
                     android:layout_alignLeft="@+id/text7"
                     android:layout_alignRight="@+id/text7"
-                    android:contentDescription="@string/weight" />
+                    android:contentDescription="@string/todo" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
