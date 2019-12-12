@@ -75,10 +75,6 @@ public class ConvertActivity extends AppCompatActivity {
                 String result=String.valueOf(converterDollarToBDT.CurrencyConverter(Float.valueOf(e1.getText().toString()), from, to));
                 e3.setText(result);
 
-
-
-
-               // e3.setText();
             }
                 else if(data.equals("Length")){
                     LengthConverter lengthConverter=new LengthConverter();
@@ -110,6 +106,7 @@ public class ConvertActivity extends AppCompatActivity {
                 else if(data.equals("Time")){
                        TimeConversion t=new TimeConversion();
                        e3.setText(t.time(e1.getText().toString(),from,to));
+                       Log.e("time",t.time(e1.getText().toString(),from,to));
                 }
                 else if(data.equals("Weight")){
                        WeightMassConverter w=new WeightMassConverter();
@@ -134,7 +131,7 @@ public class ConvertActivity extends AppCompatActivity {
         final String [] pressurelist = {"Bar","Pascal","KiloPascal","PSI","ATM"};
         final String [] temparaturelist = {"Celsius","Fahrenheit","Kelvin"};
         final String [] weightlist = {"Kilogram","Gram","Pound","Ton","Ounce"};
-        final String [] timelist = {"Minuite","Second","Hour","Day","Week","Year"};
+        final String [] timelist = {"Minute","Second","Hour","Day","Week","Month","Year"};
         final String [] numberlist= {"Decimal","Octal","Binary","Hexadecimal"};
         final String [] wordtonumber = {"Word","Number"};
 

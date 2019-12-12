@@ -10,7 +10,7 @@ public class TimeConversion {
         ////converted from minute
         if (convertFrom.toLowerCase().equals("minute")) {
 
-            if (converTo.toLowerCase().equals("secend")) {
+            if (converTo.toLowerCase().equals("second")) {
                 Double minute;
                 minute = Double.parseDouble(value) * 60;
                 finalconverted = String.valueOf(minute);
@@ -52,7 +52,7 @@ public class TimeConversion {
         }
 
         //converted from secend
-        else if ( convertFrom.toLowerCase().equals("secend")){
+        else if ( convertFrom.toLowerCase().equals("second")){
             if (converTo.toLowerCase().equals("minute")){
                 double secend;
                 secend = Double.parseDouble(value) * 0.0166667;
@@ -99,7 +99,7 @@ public class TimeConversion {
                 minute = Double.parseDouble(value) * 60;
                 finalconverted = String.valueOf(minute);
 
-            } else if (converTo.toLowerCase().equals("secend")){
+            } else if (converTo.toLowerCase().equals("second")){
                 double secend;
                 secend = Double.parseDouble(value) * 3600;
                 finalconverted = String.valueOf(secend);
@@ -140,7 +140,7 @@ public class TimeConversion {
                 minute = Double.parseDouble(value) * 1440;
                 finalconverted = String.valueOf(minute);
 
-            } else if (converTo.toLowerCase().equals("secend")){
+            } else if (converTo.toLowerCase().equals("second")){
                 double secend;
                 secend = Double.parseDouble(value) * 86400;
                 finalconverted = String.valueOf(secend);
@@ -187,7 +187,7 @@ public class TimeConversion {
                 finalconverted = String.valueOf(minute);
 
             }
-            else if (converTo.toLowerCase().equals("secend")){
+            else if (converTo.toLowerCase().equals("second")){
                 double secend;
                 secend = Double.parseDouble(value) * 604800;
                 finalconverted = String.valueOf(secend);
@@ -227,7 +227,7 @@ public class TimeConversion {
                 finalconverted = String.valueOf(minute);
 
             }
-            else if (converTo.toLowerCase().equals("secend")){
+            else if (converTo.toLowerCase().equals("second")){
                 double secend;
                 secend = Double.parseDouble(value) * 2.628e+6;
                 finalconverted = String.valueOf(secend);
@@ -269,7 +269,7 @@ public class TimeConversion {
                 finalconverted = String.valueOf(minute);
 
             }
-            else if (converTo.toLowerCase().equals("secend")){
+            else if (converTo.toLowerCase().equals("second")){
                 double secend;
                 secend = Double.parseDouble(value) * 3.154e+7;
                 finalconverted = String.valueOf(secend);
