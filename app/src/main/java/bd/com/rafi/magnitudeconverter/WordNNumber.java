@@ -1,7 +1,5 @@
 package bd.com.rafi.magnitudeconverter;
 
-import android.util.Log;
-
 import java.util.HashMap;
 
 @SuppressWarnings("ConstantConditions")
