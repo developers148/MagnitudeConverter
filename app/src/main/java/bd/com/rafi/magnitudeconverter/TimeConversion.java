@@ -28,6 +28,19 @@ public class TimeConversion {
                 day = Double.parseDouble(value) * 0.000694444;
                 finalconverted = String.valueOf(day);
             }
+            else  if (converTo.toLowerCase().equals("week")){
+
+                double week;
+                week = Double.parseDouble(value) * 9.9206e-5;
+                finalconverted = String.valueOf(week);
+            }
+            else if (converTo.toLowerCase().equals("month")){
+                double month;
+                month = Double.parseDouble(value) * 2.2831e-5;
+                finalconverted = String.valueOf(month);
+
+            }
+
             else  if (converTo.toLowerCase().equals("year")){
 
                 double year;
@@ -52,6 +65,12 @@ public class TimeConversion {
                 finalconverted = String.valueOf(hour);
 
             }
+            else  if (converTo.toLowerCase().equals("day")){
+
+                double day;
+                day = Double.parseDouble(value) * 1.1574e-5;
+                finalconverted = String.valueOf(day);
+            }
 
             else if (converTo.toLowerCase().equals("week")){
                 double week;
@@ -64,6 +83,11 @@ public class TimeConversion {
                 month = Double.parseDouble(value) * 3.8052e-7;
                 finalconverted = String.valueOf(month);
 
+            }
+            else  if (converTo.toLowerCase().equals("year")){
+                double year;
+                year = Double.parseDouble(value) * 3.171e-8;
+                finalconverted = String.valueOf(year);
             }
         }
 
@@ -80,6 +104,12 @@ public class TimeConversion {
                 secend = Double.parseDouble(value) * 3600;
                 finalconverted = String.valueOf(secend);
 
+            }
+            else  if (converTo.toLowerCase().equals("day")){
+
+                double day;
+                day = Double.parseDouble(value) * 0.0416667;
+                finalconverted = String.valueOf(day);
             }
 
             else if (converTo.toLowerCase().equals("week")){
@@ -114,6 +144,12 @@ public class TimeConversion {
                 double secend;
                 secend = Double.parseDouble(value) * 86400;
                 finalconverted = String.valueOf(secend);
+
+            }
+            else if (converTo.toLowerCase().equals("hour")){
+                double hour;
+                hour = Double.parseDouble(value) * 24;
+                finalconverted = String.valueOf(hour);
 
             }
 
@@ -163,6 +199,12 @@ public class TimeConversion {
                 finalconverted = String.valueOf(day);
 
             }
+            else if (converTo.toLowerCase().equals("month")){
+                double month;
+                month = Double.parseDouble(value) * 0.230137;
+                finalconverted = String.valueOf(month);
+
+            }
             else if (converTo.toLowerCase().equals("year")){
                 double year;
                 year = Double.parseDouble(value) * 0.0191781;
@@ -196,6 +238,12 @@ public class TimeConversion {
                 double day;
                 day = Double.parseDouble(value) * 30;
                 finalconverted = String.valueOf(day);
+
+            }
+            else if (converTo.toLowerCase().equals("week")){
+                double week;
+                week = Double.parseDouble(value) * 4.34524;
+                finalconverted = String.valueOf(week);
 
             }
 
