@@ -14,7 +14,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="4sp"
             android:textSize="60sp"
-            android:text="Categories" />
+            android:text="@string/categories"
+            android:layout_marginStart="70dp" />
 
         <LinearLayout
             android:layout_width="800dp"
@@ -51,7 +52,7 @@
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
-                    android:text="Currency"
+                    android:text="@string/currency"
                     android:textColor="#707070"
                     android:textSize="40sp" />
 
@@ -71,7 +72,8 @@
                     android:layout_marginEnd="77dp"
                     android:layout_marginRight="77dp"
                     android:layout_marginBottom="104dp"
-                    android:src="@drawable/currency" />
+                    android:src="@drawable/currency"
+                    android:contentDescription="@string/currency" />
             </RelativeLayout>
 
             <View
@@ -102,7 +104,7 @@
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
-                    android:text="Length"
+                    android:text="@string/length"
                     android:textColor="#707070"
                     android:textSize="40sp" />
 
@@ -122,7 +124,8 @@
                     android:layout_marginEnd="77dp"
                     android:layout_marginRight="77dp"
                     android:layout_marginBottom="104dp"
-                    android:src="@drawable/length" />
+                    android:src="@drawable/length"
+                    android:contentDescription="@string/length" />
             </RelativeLayout>
 
             <View
@@ -167,7 +170,7 @@
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
-                    android:text="Number"
+                    android:text="@string/number"
                     android:textColor="#707070"
                     android:textSize="40sp" />
 
@@ -187,7 +190,8 @@
                     android:layout_marginEnd="77dp"
                     android:layout_marginRight="77dp"
                     android:layout_marginBottom="104dp"
-                    android:src="@drawable/number" />
+                    android:src="@drawable/number"
+                    android:contentDescription="@string/number" />
             </RelativeLayout>
 
             <View
@@ -218,7 +222,7 @@
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
-                    android:text="Length"
+                    android:text="@string/word"
                     android:textColor="#707070"
                     android:textSize="40sp" />
 
@@ -238,7 +242,8 @@
                     android:layout_marginEnd="77dp"
                     android:layout_marginRight="77dp"
                     android:layout_marginBottom="104dp"
-                    android:src="@drawable/numbertoword" />
+                    android:src="@drawable/numbertoword"
+                    android:contentDescription="@string/word" />
             </RelativeLayout>
 
             <View
@@ -284,7 +289,7 @@
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
-                    android:text="Pressure"
+                    android:text="@string/pressure"
                     android:textColor="#707070"
                     android:textSize="40sp" />
 
@@ -304,7 +309,8 @@
                     android:layout_marginEnd="77dp"
                     android:layout_marginRight="77dp"
                     android:layout_marginBottom="104dp"
-                    android:src="@drawable/pressure" />
+                    android:src="@drawable/pressure"
+                    android:contentDescription="@string/pressure" />
             </RelativeLayout>
 
             <View
@@ -335,7 +341,7 @@
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
-                    android:text="Temperature"
+                    android:text="@string/temparature"
                     android:textColor="#707070"
                     android:textSize="40sp" />
 
@@ -355,7 +361,8 @@
                     android:layout_marginEnd="77dp"
                     android:layout_marginRight="77dp"
                     android:layout_marginBottom="104dp"
-                    android:src="@drawable/temparature" />
+                    android:src="@drawable/temparature"
+                    android:contentDescription="@string/temparature" />
             </RelativeLayout>
 
             <View
@@ -399,7 +406,7 @@
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
-                    android:text="Time"
+                    android:text="@string/time"
                     android:textColor="#707070"
                     android:textSize="40sp" />
 
@@ -419,7 +426,8 @@
                     android:layout_marginEnd="77dp"
                     android:layout_marginRight="77dp"
                     android:layout_marginBottom="104dp"
-                    android:src="@drawable/time" />
+                    android:src="@drawable/time"
+                    android:contentDescription="@string/time" />
             </RelativeLayout>
 
             <View
@@ -450,7 +458,7 @@
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
-                    android:text="Weight"
+                    android:text="@string/weight"
                     android:textColor="#707070"
                     android:textSize="40sp" />
 
@@ -470,7 +478,8 @@
                     android:layout_marginEnd="77dp"
                     android:layout_marginRight="77dp"
                     android:layout_marginBottom="104dp"
-                    android:src="@drawable/weight" />
+                    android:src="@drawable/weight"
+                    android:contentDescription="@string/weight" />
             </RelativeLayout>
 
             <View

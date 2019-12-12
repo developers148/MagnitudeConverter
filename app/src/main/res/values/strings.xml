@@ -4,6 +4,32 @@
     <string name="title">Magnitude Converter</string>
 
     <string name="spinner_prompt">Choose</string>
+    <string name="category">Category</string>
+    <string name="numeric">Numeric</string>
+    <string name="convert_from">Convert From</string>
+    <string name="alphabetic">Alphabetic</string>
+
+
+    <string name="converted_to">Converted To</string>
+    <string name="submit">Submit</string>
+    <string name="categories">Categories</string>
+    <string name="currency">Currency</string>
+    <string name="length">Length</string>
+    <string name="number">Number</string>
+    <string name="word">Word</string>
+    <string name="pressure">Pressure</string>
+    <string name="temparature">Temparature</string>
+    <string name="time">Time</string>
+    <string name="weight">Weight</string>
+    <string name="currencysrc">currencysrc</string>
+    <string name="usd">USD</string>
+    <string name="from">From</string>
+    <string name="convert">convert</string>
+    <string name="bdt">BDT</string>
+
+
+
+
     <string-array name="spinner_arrays">
         <item>In Word</item>
         <item>In Numeric</item>
