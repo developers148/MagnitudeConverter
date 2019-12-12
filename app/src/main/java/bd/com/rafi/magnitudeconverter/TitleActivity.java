@@ -1,34 +1,16 @@
 package bd.com.rafi.magnitudeconverter;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.arch.core.internal.FastSafeIterableMap;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.PopupMenu;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class TitleActivity extends AppCompatActivity {
 
 
-    ImageButton imageButton,imageButton2,imagebutton1;
 
-    TextView textView1, textView2,textView;
-    Button submitBtn;
-    ArrayList<String> catagory,Item,Subitem;
-    int skip=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

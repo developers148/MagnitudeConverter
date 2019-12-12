@@ -67,62 +67,61 @@ public class ConvertActivity extends AppCompatActivity {
             }
         });
 
+
         convert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                InputMethodManager imm = (InputMethodManager) ConvertActivity.this.getSystemService(Activity.INPUT_METHOD_SERVICE);
-                imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-                if (data.equals("Currency")) {
+                if (!e1.getText().toString().isEmpty()) {
 
-                ConverterDollarToBDT converterDollarToBDT = new ConverterDollarToBDT();
-                String result=String.valueOf(converterDollarToBDT.CurrencyConverter(Float.valueOf(e1.getText().toString()), from, to));
-                e3.setText(result);
+                    InputMethodManager imm = (InputMethodManager) ConvertActivity.this.getSystemService(Activity.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                    if (data.equals("Currency")) {
 
-            }
-                else if(data.equals("Length")){
-                    LengthConverter lengthConverter=new LengthConverter();
-                    e3.setText(String.valueOf(lengthConverter.getresult(from, to,e1.getText().toString())));
-                }
-                else if(data.equals("Number")){
-                    NumberConversion n=new NumberConversion();
-                   e3.setText(n.numberSystemConversion(e1.getText().toString(),from,to));
+                        ConverterDollarToBDT converterDollarToBDT = new ConverterDollarToBDT();
+                        String result = String.valueOf(converterDollarToBDT.CurrencyConverter(Float.valueOf(e1.getText().toString()), from, to));
+                        e3.setText(result);
 
-                }
-                else if(data.equals("Word")){
-                      if(from.equals("Word")){
-                         e3.setText(String.valueOf(WordNNumber.wordToNumber(e1.getText().toString())));
-                      }
-                      else{
-                          NumberToWords.AbstractProcessor processor;
-                          processor=new NumberToWords.DefaultProcessor();
-                          e3.setText(processor.getName(e1.getText().toString()));
-                      }
-                }
-                else if(data.equals("Pressure")){
-                 PressureConverter p=new PressureConverter();
-                 e3.setText(p.BarToPascal(e1.getText().toString(),from,to));
+                    } else if (data.equals("Length")) {
+                        LengthConverter lengthConverter = new LengthConverter();
+                        e3.setText(String.valueOf(lengthConverter.getresult(from, to, e1.getText().toString())));
+                    } else if (data.equals("Number")) {
+                        NumberConversion n = new NumberConversion();
+                        e3.setText(n.numberSystemConversion(e1.getText().toString(), from, to));
 
+                    } else if (data.equals("Word")) {
+                        if (from.equals("Word")) {
+                            e3.setText(String.valueOf(WordNNumber.wordToNumber(e1.getText().toString())));
+                        } else {
+                            NumberToWords.AbstractProcessor processor;
+                            processor = new NumberToWords.DefaultProcessor();
+                            e3.setText(processor.getName(e1.getText().toString()));
+                        }
+                    } else if (data.equals("Pressure")) {
+                        PressureConverter p = new PressureConverter();
+                        e3.setText(p.BarToPascal(e1.getText().toString(), from, to));
+
+                    } else if (data.equals("Temperature")) {
+                        TempCon t = new TempCon();
+                        e3.setText(t.tempConversion(e1.getText().toString(), from, to));
+                    } else if (data.equals("Time")) {
+                        TimeConversion t = new TimeConversion();
+                        e3.setText(t.time(e1.getText().toString(), from, to));
+                        Log.e("time", t.time(e1.getText().toString(), from, to));
+                    } else if (data.equals("Weight")) {
+                        WeightMassConverter w = new WeightMassConverter();
+                        e3.setText(w.weightToMass(e1.getText().toString(), from, to));
+                    }
                 }
-                else if(data.equals("Temperature")){
-                  TempCon t=new TempCon();
-                  e3.setText(t.tempConversion(e1.getText().toString(),from,to));
-                }
-                else if(data.equals("Time")){
-                       TimeConversion t=new TimeConversion();
-                       e3.setText(t.time(e1.getText().toString(),from,to));
-                       Log.e("time",t.time(e1.getText().toString(),from,to));
-                }
-                else if(data.equals("Weight")){
-                       WeightMassConverter w=new WeightMassConverter();
-                       e3.setText(w.weightToMass(e1.getText().toString(),from,to));
+                else{
+
                 }
             }
         });
 
+}
 
 
 
-    }
 
 
 
