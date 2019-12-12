@@ -1,5 +1,7 @@
 package bd.com.rafi.magnitudeconverter;
 
+import android.util.Log;
+
 class NumberConversion {
 
 
@@ -10,6 +12,7 @@ class NumberConversion {
             case "Decimal":
                 switch (convertTo) {
                     case "Binary": {
+                        Log.e("time","error");
                         int decimal;
                         decimal = Integer.parseInt(value);
                         finalconverted = Integer.toBinaryString(decimal);
@@ -32,6 +35,7 @@ class NumberConversion {
             case "Binary":
                 switch (convertTo) {
                     case "Decimal":
+
                         finalconverted = String.valueOf(Integer.parseInt(value, 2));
                         break;
                     case "Octal":

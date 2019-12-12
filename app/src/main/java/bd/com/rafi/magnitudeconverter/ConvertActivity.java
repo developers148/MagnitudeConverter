@@ -17,6 +17,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import java.util.ArrayList;
@@ -55,12 +56,14 @@ public class ConvertActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 showPopup2(view);
+
             }
         });
         imagebtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 showPopup3(view);
+                e3.setHint(to);
             }
         });
 
@@ -83,6 +86,7 @@ public class ConvertActivity extends AppCompatActivity {
                 else if(data.equals("Number")){
                     NumberConversion n=new NumberConversion();
                    e3.setText(n.numberSystemConversion(e1.getText().toString(),from,to));
+
                 }
                 else if(data.equals("Word")){
                       if(from.equals("Word")){
@@ -223,7 +227,7 @@ public class ConvertActivity extends AppCompatActivity {
                 subitem.remove(skip);
                 e2.setHint(subitem.get(0));
                 to=subitem.get(0);
-
+                e3.setHint(to);
 
                 return true;
             }
@@ -243,6 +247,7 @@ public class ConvertActivity extends AppCompatActivity {
                 CharSequence charSequence=menuItem.getTitle();
                 e2.setHint(charSequence);
                 to=charSequence.toString();
+                e3.setHint(to);
                 return true;
             }
         });
