@@ -10,17 +10,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="47dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="4sp"
-            android:textSize="35sp"
+            android:layout_marginLeft="@dimen/titlemarginstart_8dp"
+            android:layout_marginTop="@dimen/titlemargintop_10dp"
+            android:layout_marginBottom="@dimen/titlemarginbottom_4dp"
+            android:textSize="@dimen/titletextsize_20sp"
             android:text="@string/categories"
-            android:layout_marginStart="47dp" />
+            android:layout_marginStart="@dimen/titlemarginstart_8dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/linearlayoutmargin_8dp"
 
             android:orientation="horizontal">
 
@@ -34,7 +34,7 @@
                 android:layout_weight="1"
                 android:onClick="click"
                 android:layout_gravity="center"
-                android:layout_height="200dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
                     android:id="@+id/currencytext"
                     android:onClick="click"
@@ -44,13 +44,13 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="45dp"
+                    android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/currency"
                     android:gravity="center"
                     android:textColor="#707070"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/textviewtextsize_30sp"
 
                     android:layout_alignParentRight="true"
                     android:layout_alignParentLeft="true" />
@@ -62,9 +62,9 @@
                     android:layout_alignTop="@+id/currencytext"
                     android:layout_alignBottom="@+id/currencytext"
                     android:layout_gravity="center"
-                    android:layout_marginTop="-45dp"
+                    android:layout_marginTop="@dimen/imageviewmargintop_20dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="110dp"
+                    android:layout_marginBottom="@dimen/imageviewmarginbottom_56dp"
                     android:src="@drawable/currency"
                     android:contentDescription="@string/todo"
 
@@ -79,7 +79,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_height="200dp"
+                android:layout_height="@dimen/relativelayoutheight_100dp"
 
                 >
                 <TextView
@@ -90,13 +90,13 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="45dp"
+                    android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/length"
                     android:gravity="center"
                     android:textColor="#707070"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/textviewtextsize_30sp"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentLeft="true"
                     />
