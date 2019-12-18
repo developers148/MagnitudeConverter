@@ -50,11 +50,11 @@
                     android:gravity="center"
                     android:text="@string/currency"
                     android:textColor="#707070"
-                    android:textSize="40sp" />
+                    android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="@dimen/imageviewwidth_60dp"
+                    android:layout_height="@dimen/imageviewheigth_60dp"
                     android:layout_alignTop="@+id/text"
                     android:layout_alignBottom="@+id/text"
                     android:layout_marginTop="@dimen/imageviewmargintop_20dp"
@@ -91,11 +91,11 @@
                     android:gravity="center"
                     android:text="@string/length"
                     android:textColor="#707070"
-                    android:textSize="40sp" />
+                    android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="@dimen/imageviewwidth_60dp"
+                    android:layout_height="@dimen/imageviewheigth_60dp"
                     android:layout_alignTop="@+id/text1"
                     android:layout_alignBottom="@+id/text1"
                     android:layout_gravity="center"
@@ -154,8 +154,8 @@
                     android:textSize="40sp" />
 
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="@dimen/imageviewwidth_60dp"
+                    android:layout_height="@dimen/imageviewheigth_60dp"
 
 
                     android:layout_alignTop="@+id/text2"
@@ -201,11 +201,11 @@
                     android:gravity="center"
                     android:text="@string/word"
                     android:textColor="#707070"
-                    android:textSize="40sp" />
+                    android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="@dimen/imageviewwidth_60dp"
+                    android:layout_height="@dimen/imageviewheigth_60dp"
 
                     android:layout_alignTop="@+id/text3"
 
@@ -264,11 +264,11 @@
                     android:gravity="center"
                     android:text="@string/pressure"
                     android:textColor="#707070"
-                    android:textSize="40sp" />
+                    android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="@dimen/imageviewwidth_60dp"
+                    android:layout_height="@dimen/imageviewheigth_60dp"
 
                     android:layout_alignTop="@+id/text4"
 
@@ -310,11 +310,11 @@
                     android:gravity="center"
                     android:text="@string/temparature"
                     android:textColor="#707070"
-                    android:textSize="40sp" />
+                    android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="@dimen/imageviewwidth_60dp"
+                    android:layout_height="@dimen/imageviewheigth_60dp"
 
                     android:layout_alignTop="@+id/text5"
 
@@ -371,11 +371,11 @@
                     android:gravity="center"
                     android:text="@string/time"
                     android:textColor="#707070"
-                    android:textSize="40sp" />
+                    android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="@dimen/imageviewwidth_60dp"
+                    android:layout_height="@dimen/imageviewheigth_60dp"
 
                     android:layout_alignTop="@+id/text6"
 
@@ -418,11 +418,11 @@
                     android:gravity="center"
                     android:text="@string/weight"
                     android:textColor="#707070"
-                    android:textSize="40sp" />
+                    android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="@dimen/imageviewwidth_60dp"
+                    android:layout_height="@dimen/imageviewheigth_60dp"
 
                     android:layout_alignTop="@+id/text7"
 
