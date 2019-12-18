@@ -7,40 +7,33 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="wrap_content">
-
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight=".05"/>
-
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="2"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="4dp"
-                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/titlemargintop_10dp"
+                android:layout_marginBottom="@dimen/titlemarginbottom_4dp"
+                android:layout_marginStart="@dimen/titlemarginstart_8dp"
                 android:text="@string/categories"
-                android:textSize="20sp"
-                android:layout_marginLeft="8dp" />
+                android:textSize="@dimen/titletextsize_20sp"
+                android:layout_marginLeft="@dimen/titlemarginstart_8dp" />
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight=".2"/>
-
-
         </LinearLayout>
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/linearlayoutmargin_8dp"
             android:orientation="horizontal">
             <View
                 android:layout_width="0dp"
@@ -50,7 +43,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_height="100dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/currencytext"
@@ -60,11 +53,11 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/currency"
                     android:gravity="center"
                     android:textColor="#707070"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true" />
@@ -76,8 +69,8 @@
                     android:layout_alignTop="@+id/currencytext"
                     android:layout_alignBottom="@+id/currencytext"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="-20dp"
-                    android:layout_marginBottom="56dp"
+                    android:layout_marginTop="@dimen/imageviewmargintop_20dp"
+                    android:layout_marginBottom="@dimen/imageviewmarginbottom_56dp"
                     android:src="@drawable/currency"
                     android:contentDescription="@string/currency" />
             </RelativeLayout>
@@ -90,7 +83,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_height="100dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/lengthtext1"
@@ -100,11 +93,11 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/length"
                     android:gravity="center"
                     android:textColor="#707070"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true" />
@@ -116,8 +109,8 @@
                     android:layout_alignTop="@+id/lengthtext1"
                     android:layout_alignBottom="@+id/lengthtext1"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="-20dp"
-                    android:layout_marginBottom="56dp"
+                    android:layout_marginTop="@dimen/imageviewmargintop_20dp"
+                    android:layout_marginBottom="@dimen/imageviewmarginbottom_56dp"
                     android:src="@drawable/length"
                     android:contentDescription="@string/length" />
             </RelativeLayout>
@@ -126,15 +119,11 @@
                 android:layout_height="0dp"
                 android:layout_weight=".05"/>
         </LinearLayout>
-
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/linearlayoutmargin_8dp"
             android:orientation="horizontal">
-
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -143,7 +132,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_height="100dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/numbertext2"
@@ -153,11 +142,11 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/number"
                     android:gravity="center"
                     android:textColor="#707070"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true" />
@@ -169,8 +158,8 @@
                     android:layout_alignTop="@+id/numbertext2"
                     android:layout_alignBottom="@+id/numbertext2"
                     android:layout_gravity="center"
-                    android:layout_marginTop="-19dp"
-                    android:layout_marginBottom="56dp"
+                    android:layout_marginTop="@dimen/imageviewmargintop_20dp"
+                    android:layout_marginBottom="@dimen/imageviewmarginbottom_56dp"
                     android:src="@drawable/number"
                     android:layout_centerHorizontal="true"
                     android:contentDescription="@string/number" />
@@ -179,26 +168,24 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight=".1"/>
-
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_height="100dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
                     android:onClick="click" android:id="@+id/wordtext3"
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/word"
                     android:gravity="center"
                     android:textColor="#707070"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true" />
@@ -211,8 +198,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_alignBottom="@+id/wordtext3"
                     android:layout_gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:layout_marginBottom="56dp"
+                    android:layout_marginTop="@dimen/imageviewmargintop_20dp"
+                    android:layout_marginBottom="@dimen/imageviewmarginbottom_56dp"
                     android:src="@drawable/numbertoword"
                     android:contentDescription="@string/word" />
             </RelativeLayout>
@@ -221,13 +208,10 @@
                 android:layout_height="0dp"
                 android:layout_weight=".05"/>
         </LinearLayout>
-
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/linearlayoutmargin_8dp"
             android:orientation="horizontal">
             <View
                 android:layout_width="0dp"
@@ -237,7 +221,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_height="100dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/pressuretext4"
@@ -247,11 +231,11 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/pressure"
                     android:gravity="center"
                     android:textColor="#707070"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true" />
@@ -263,9 +247,9 @@
                     android:layout_alignTop="@+id/pressuretext4"
                     android:layout_alignBottom="@+id/pressuretext4"
                     android:layout_gravity="center"
-                    android:layout_marginTop="-20dp"
+                    android:layout_marginTop="@dimen/imageviewmargintop_20dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="56dp"
+                    android:layout_marginBottom="@dimen/imageviewmarginbottom_56dp"
                     android:src="@drawable/pressure"
                     android:contentDescription="@string/pressure" />
             </RelativeLayout>
@@ -273,12 +257,11 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight=".1"/>
-
             <RelativeLayout
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_gravity="center"
-                android:layout_height="100dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/temparaturetext5"
@@ -288,11 +271,11 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/temparature"
                     android:gravity="center"
                     android:textColor="#707070"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true" />
@@ -304,8 +287,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_alignTop="@+id/temparaturetext5"
                     android:layout_alignBottom="@+id/temparaturetext5"
-                    android:layout_marginTop="-20dp"
-                    android:layout_marginBottom="56dp"
+                    android:layout_marginTop="@dimen/imageviewmargintop_20dp"
+                    android:layout_marginBottom="@dimen/imageviewmarginbottom_56dp"
                     android:src="@drawable/temparature"
                     android:contentDescription="@string/temparature" />
             </RelativeLayout>
@@ -317,7 +300,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/linearlayoutmargin_8dp"
             android:orientation="horizontal">
 
             <View
@@ -328,22 +311,21 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_gravity="center"
-                android:layout_height="100dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
-
                     android:onClick="click"
                     android:id="@+id/timetext6"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="22dp"
+                    android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/time"
                     android:gravity="center"
                     android:textColor="#707070"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true" />
@@ -356,8 +338,8 @@
                     android:layout_alignTop="@+id/timetext6"
                     android:layout_alignBottom="@+id/timetext6"
                     android:layout_gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:layout_marginBottom="56dp"
+                    android:layout_marginTop="@dimen/imageviewmargintop_20dp"
+                    android:layout_marginBottom="@dimen/imageviewmarginbottom_56dp"
                     android:src="@drawable/time"
                     android:contentDescription="@string/time" />
             </RelativeLayout>
@@ -370,21 +352,21 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_gravity="center"
-                android:layout_height="100dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/weighttext7"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="22dp"
+                    android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/weight"
                     android:gravity="center"
                     android:textColor="#707070"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true" />
@@ -394,11 +376,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/weighttext7"
-
                     android:layout_alignBottom="@+id/weighttext7"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="-20dp"
-                    android:layout_marginBottom="56dp"
+                    android:layout_marginTop="@dimen/imageviewmargintop_20dp"
+                    android:layout_marginBottom="@dimen/imageviewmarginbottom_56dp"
                     android:src="@drawable/weight"
                     android:contentDescription="@string/weight" />
             </RelativeLayout>
