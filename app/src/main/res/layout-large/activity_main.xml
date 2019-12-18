@@ -57,8 +57,8 @@
                 <ImageView
                     android:onClick="click"
                     android:id="@+id/currencyimage"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/imageviewwidth_60dp"
+                    android:layout_height="@dimen/imageviewheigth_60dp"
                     android:layout_alignTop="@+id/currencytext"
                     android:layout_alignBottom="@+id/currencytext"
                     android:layout_gravity="center"
@@ -103,14 +103,14 @@
                 <ImageView
                     android:onClick="click"
                     android:id="@+id/lengthimage"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/imageviewwidth_60dp"
+                    android:layout_height="@dimen/imageviewheigth_60dp"
                     android:layout_alignTop="@+id/text1"
                     android:layout_alignBottom="@+id/text1"
                     android:layout_gravity="center"
-                    android:layout_marginTop="-45dp"
+                    android:layout_marginTop="@dimen/imageviewmargintop_20dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="110dp"
+                    android:layout_marginBottom="@dimen/imageviewmarginbottom_56dp"
                     android:src="@drawable/length"
                     android:contentDescription="@string/todo" />
             </RelativeLayout>
