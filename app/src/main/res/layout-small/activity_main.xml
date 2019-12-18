@@ -8,19 +8,31 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="4sp"
-            android:textSize="12sp"
-            android:text="@string/categories"
-            android:layout_marginStart="10dp" />
+
 
         <LinearLayout
-            android:layout_width="161dp"
-            android:layout_height="42dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4sp"
+                android:textSize="15sp"
+                android:text="@string/categories"
+                android:layout_marginStart="21dp" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="8dp"
 
             android:orientation="horizontal">
@@ -28,121 +40,101 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight=".05" />
 
             <RelativeLayout
-                android:layout_width="76dp"
-                android:layout_height="42dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
                 android:layout_gravity="center">
 
                 <TextView
                     android:id="@+id/text"
-                    android:layout_width="64dp"
-                    android:layout_height="31dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="6dp"
-                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="14dp"
                     android:layout_marginBottom="2dp"
                     android:background="@drawable/textviewborder"
                     android:gravity="center"
                     android:text="@string/currency"
                     android:textColor="#707070"
-                    android:textSize="10sp"
-                    tools:ignore="SmallSp" />
+                    android:textSize="12sp"
+                    />
 
                 <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:layout_alignStart="@+id/text"
-                    android:layout_alignLeft="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/text"
-                    android:layout_alignEnd="@+id/text"
-                    android:layout_alignRight="@+id/text"
                     android:layout_alignBottom="@+id/text"
                     android:layout_gravity="center"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginLeft="22dp"
-                    android:layout_marginTop="-8dp"
-                    android:layout_marginEnd="23dp"
-                    android:layout_marginRight="23dp"
-                    android:layout_marginBottom="22dp"
-                    android:src="@drawable/currency"
-                    android:contentDescription="@string/todo" />
+                    android:layout_marginTop="-14dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="45dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/currency" />
             </RelativeLayout>
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight=".1" />
 
 
             <RelativeLayout
-                android:layout_width="76dp"
-                android:layout_height="42dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
                 android:layout_gravity="center">
 
                 <TextView
                     android:id="@+id/text1"
-                    android:layout_width="64dp"
-                    android:layout_height="31dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="6dp"
-                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="14dp"
                     android:layout_marginBottom="2dp"
                     android:background="@drawable/textviewborder"
                     android:gravity="center"
                     android:text="@string/length"
                     android:textColor="#707070"
-                    android:textSize="10sp"
-                    tools:ignore="SmallSp" />
+                    android:textSize="12sp"
+                    />
 
                 <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:layout_alignStart="@+id/text1"
-                    android:layout_alignLeft="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/text1"
-                    android:layout_alignEnd="@+id/text1"
-                    android:layout_alignRight="@+id/text1"
                     android:layout_alignBottom="@+id/text1"
                     android:layout_gravity="center"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginLeft="22dp"
-                    android:layout_marginTop="-8dp"
-                    android:layout_marginEnd="23dp"
-                    android:layout_marginRight="23dp"
-                    android:layout_marginBottom="22dp"
-                    android:src="@drawable/currency"
+                    android:layout_marginTop="-14dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="45dp"
+                    android:src="@drawable/length"
                     android:contentDescription="@string/todo" />
             </RelativeLayout>
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight=".05" />
         </LinearLayout>
 
 
 
         <LinearLayout
-            android:layout_width="161dp"
-            android:layout_height="42dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="8dp"
 
             android:orientation="horizontal">
@@ -150,52 +142,42 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight=".05" />
 
             <RelativeLayout
-                android:layout_width="76dp"
-                android:layout_height="42dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
                 android:layout_gravity="center">
 
                 <TextView
                     android:id="@+id/text2"
-                    android:layout_width="64dp"
-                    android:layout_height="31dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="6dp"
-                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="14dp"
                     android:layout_marginBottom="2dp"
                     android:background="@drawable/textviewborder"
                     android:gravity="center"
                     android:text="@string/number"
                     android:textColor="#707070"
-                    android:textSize="10sp"
-                    tools:ignore="SmallSp" />
+                    android:textSize="12sp"
+                    />
 
                 <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:layout_alignStart="@+id/text2"
-                    android:layout_alignLeft="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/text2"
-                    android:layout_alignEnd="@+id/text2"
-                    android:layout_alignRight="@+id/text2"
                     android:layout_alignBottom="@+id/text2"
                     android:layout_gravity="center"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginLeft="22dp"
-                    android:layout_marginTop="-8dp"
-                    android:layout_marginEnd="23dp"
-                    android:layout_marginRight="23dp"
-                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="-14dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="45dp"
                     android:src="@drawable/number"
                     android:contentDescription="@string/todo" />
             </RelativeLayout>
@@ -203,53 +185,43 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight=".1" />
 
 
             <RelativeLayout
-                android:layout_width="76dp"
-                android:layout_height="42dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
                 android:layout_gravity="center">
 
                 <TextView
                     android:id="@+id/text3"
-                    android:layout_width="64dp"
-                    android:layout_height="31dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="6dp"
-                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="14dp"
                     android:layout_marginBottom="2dp"
                     android:background="@drawable/textviewborder"
                     android:gravity="center"
                     android:text="@string/word"
                     android:textColor="#707070"
-                    android:textSize="10sp"
-                    tools:ignore="SmallSp" />
+                    android:textSize="12sp"
+                    />
 
                 <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:layout_alignStart="@+id/text3"
-                    android:layout_alignLeft="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/text3"
-                    android:layout_alignEnd="@+id/text3"
-                    android:layout_alignRight="@+id/text3"
                     android:layout_alignBottom="@+id/text3"
                     android:layout_gravity="center"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginLeft="22dp"
-                    android:layout_marginTop="-8dp"
-                    android:layout_marginEnd="23dp"
-                    android:layout_marginRight="23dp"
-                    android:layout_marginBottom="22dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-14dp"
+                    android:layout_marginBottom="45dp"
                     android:src="@drawable/numbertoword"
                     android:contentDescription="@string/todo" />
             </RelativeLayout>
@@ -257,64 +229,54 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight=".05" />
         </LinearLayout>
 
 
         <LinearLayout
-            android:layout_width="161dp"
-            android:layout_height="42dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:orientation="horizontal">
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight=".05" />
 
             <RelativeLayout
-                android:layout_width="76dp"
-                android:layout_height="42dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
                 android:layout_gravity="center">
 
                 <TextView
                     android:id="@+id/text4"
-                    android:layout_width="64dp"
-                    android:layout_height="31dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="6dp"
-                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="14dp"
                     android:layout_marginBottom="2dp"
                     android:background="@drawable/textviewborder"
                     android:gravity="center"
                     android:text="@string/pressure"
                     android:textColor="#707070"
-                    android:textSize="10sp"
-                    tools:ignore="SmallSp" />
+                    android:textSize="12sp"
+                    />
 
                 <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:layout_alignStart="@+id/text4"
-                    android:layout_alignLeft="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/text4"
-                    android:layout_alignEnd="@+id/text4"
-                    android:layout_alignRight="@+id/text4"
                     android:layout_alignBottom="@+id/text4"
                     android:layout_gravity="center"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginLeft="22dp"
-                    android:layout_marginTop="-8dp"
-                    android:layout_marginEnd="23dp"
-                    android:layout_marginRight="23dp"
-                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="-14dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="45dp"
                     android:src="@drawable/pressure"
                     android:contentDescription="@string/todo" />
             </RelativeLayout>
@@ -322,53 +284,43 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight=".1" />
 
 
             <RelativeLayout
-                android:layout_width="76dp"
-                android:layout_height="42dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
                 android:layout_gravity="center">
 
                 <TextView
                     android:id="@+id/text5"
-                    android:layout_width="64dp"
-                    android:layout_height="31dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="6dp"
-                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="14dp"
                     android:layout_marginBottom="2dp"
                     android:background="@drawable/textviewborder"
                     android:gravity="center"
                     android:text="@string/temparature"
                     android:textColor="#707070"
-                    android:textSize="10sp"
-                    tools:ignore="SmallSp" />
+                    android:textSize="12sp"
+                     />
 
                 <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:layout_alignStart="@+id/text5"
-                    android:layout_alignLeft="@+id/text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/text5"
-                    android:layout_alignEnd="@+id/text5"
-                    android:layout_alignRight="@+id/text5"
                     android:layout_alignBottom="@+id/text5"
                     android:layout_gravity="center"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginLeft="22dp"
-                    android:layout_marginTop="-8dp"
-                    android:layout_marginEnd="23dp"
-                    android:layout_marginRight="23dp"
-                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="-14dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="45dp"
                     android:src="@drawable/temparature"
                     android:contentDescription="@string/todo" />
             </RelativeLayout>
@@ -376,11 +328,11 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight=".05" />
         </LinearLayout>
         <LinearLayout
-            android:layout_width="161dp"
-            android:layout_height="42dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="8dp"
 
             android:orientation="horizontal">
@@ -388,52 +340,42 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight=".05" />
 
             <RelativeLayout
-                android:layout_width="76dp"
-                android:layout_height="42dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
                 android:layout_gravity="center">
 
                 <TextView
                     android:id="@+id/text6"
-                    android:layout_width="64dp"
-                    android:layout_height="31dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="6dp"
-                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="14dp"
                     android:layout_marginBottom="2dp"
                     android:background="@drawable/textviewborder"
                     android:gravity="center"
                     android:text="@string/time"
                     android:textColor="#707070"
-                    android:textSize="10sp"
-                    tools:ignore="SmallSp" />
+                    android:textSize="12sp"
+                    />
 
                 <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:layout_alignStart="@+id/text6"
-                    android:layout_alignLeft="@+id/text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/text6"
-                    android:layout_alignEnd="@+id/text6"
-                    android:layout_alignRight="@+id/text6"
+                    android:layout_centerHorizontal="true"
                     android:layout_alignBottom="@+id/text6"
                     android:layout_gravity="center"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginLeft="22dp"
-                    android:layout_marginTop="-8dp"
-                    android:layout_marginEnd="23dp"
-                    android:layout_marginRight="23dp"
-                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="-14dp"
+                    android:layout_marginBottom="45dp"
                     android:src="@drawable/time"
                     android:contentDescription="@string/todo" />
             </RelativeLayout>
@@ -441,60 +383,49 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight=".1" />
 
 
             <RelativeLayout
-                android:layout_width="76dp"
-                android:layout_height="42dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
                 android:layout_gravity="center">
 
                 <TextView
                     android:id="@+id/text7"
-                    android:layout_width="64dp"
-                    android:layout_height="31dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="6dp"
-                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="14dp"
                     android:layout_marginBottom="2dp"
                     android:background="@drawable/textviewborder"
                     android:gravity="center"
                     android:text="@string/weight"
                     android:textColor="#707070"
-                    android:textSize="10sp"
-                    tools:ignore="SmallSp" />
+                    android:textSize="12sp"/>
 
                 <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:layout_alignStart="@+id/text7"
-                    android:layout_alignLeft="@+id/text7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/text7"
-                    android:layout_alignEnd="@+id/text7"
-                    android:layout_alignRight="@+id/text7"
                     android:layout_alignBottom="@+id/text7"
                     android:layout_gravity="center"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginLeft="22dp"
-                    android:layout_marginTop="-8dp"
-                    android:layout_marginEnd="23dp"
-                    android:layout_marginRight="23dp"
-                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="-14dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="45dp"
                     android:src="@drawable/weight"
                     android:contentDescription="@string/todo" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight=".05" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
