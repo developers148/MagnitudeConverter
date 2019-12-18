@@ -7,15 +7,35 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="47dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="4sp"
-            android:textSize="20sp"
-            android:text="@string/categories"
-            android:layout_marginStart="47dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".05"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/categories"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".2"/>
+
+
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,21 +45,22 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight=".05"/>
             <RelativeLayout
-                android:layout_width="140dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_height="100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/currencytext"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="22dp"
+                    android:layout_marginTop="20dp"
                     android:text="@string/currency"
                     android:gravity="center"
                     android:textColor="#707070"
@@ -52,39 +73,34 @@
                     android:id="@+id/currencyimage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/currencytext"
                     android:layout_alignTop="@+id/currencytext"
-                    android:layout_alignEnd="@+id/currencytext"
                     android:layout_alignBottom="@+id/currencytext"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="17dp"
-                    android:layout_marginTop="-19dp"
-                    android:layout_marginEnd="17dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-20dp"
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/currency"
-                    android:layout_alignLeft="@+id/currencytext"
-                    android:layout_alignRight="@+id/currencytext"
                     android:contentDescription="@string/currency" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight=".1"/>
 
             <RelativeLayout
-                android:layout_width="140dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_height="100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/lengthtext1"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="22dp"
+                    android:layout_marginTop="20dp"
                     android:text="@string/length"
                     android:gravity="center"
                     android:textColor="#707070"
@@ -97,24 +113,18 @@
                     android:id="@+id/lenthgimage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/lengthtext1"
                     android:layout_alignTop="@+id/lengthtext1"
-                    android:layout_alignEnd="@+id/lengthtext1"
                     android:layout_alignBottom="@+id/lengthtext1"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="17dp"
-                    android:layout_marginTop="-19dp"
-                    android:layout_marginEnd="17dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-20dp"
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/length"
-                    android:layout_alignLeft="@+id/lengthtext1"
-                    android:layout_alignRight="@+id/lengthtext1"
                     android:contentDescription="@string/length" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight=".05"/>
         </LinearLayout>
 
 
@@ -123,27 +133,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-
             android:orientation="horizontal">
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight=".05"/>
             <RelativeLayout
-                android:layout_width="140dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_height="100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/numbertext2"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="22dp"
+                    android:layout_marginTop="20dp"
                     android:text="@string/number"
                     android:gravity="center"
                     android:textColor="#707070"
@@ -156,39 +166,35 @@
                     android:onClick="click"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/numbertext2"
                     android:layout_alignTop="@+id/numbertext2"
-                    android:layout_alignEnd="@+id/numbertext2"
                     android:layout_alignBottom="@+id/numbertext2"
                     android:layout_gravity="center"
-                    android:layout_marginStart="17dp"
                     android:layout_marginTop="-19dp"
-                    android:layout_marginEnd="17dp"
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/number"
-                    android:layout_alignLeft="@+id/numbertext2"
-                    android:layout_alignRight="@+id/numbertext2"
+                    android:layout_centerHorizontal="true"
                     android:contentDescription="@string/number" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight=".1"/>
 
             <RelativeLayout
-                android:layout_width="140dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_height="100dp">
                 <TextView
-                    android:onClick="click"
-                    android:id="@+id/wordtext3"
+                    android:onClick="click" android:id="@+id/wordtext3"
+
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="22dp"
+                    android:layout_marginTop="20dp"
                     android:text="@string/word"
                     android:gravity="center"
                     android:textColor="#707070"
@@ -201,24 +207,19 @@
                     android:onClick="click"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/wordtext3"
                     android:layout_alignTop="@+id/wordtext3"
-                    android:layout_alignEnd="@+id/wordtext3"
+                    android:layout_centerHorizontal="true"
                     android:layout_alignBottom="@+id/wordtext3"
                     android:layout_gravity="center"
-                    android:layout_marginStart="17dp"
-                    android:layout_marginTop="-19dp"
-                    android:layout_marginEnd="17dp"
+                    android:layout_marginTop="-20dp"
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/numbertoword"
-                    android:layout_alignLeft="@+id/wordtext3"
-                    android:layout_alignRight="@+id/wordtext3"
                     android:contentDescription="@string/word" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight=".05"/>
         </LinearLayout>
 
 
@@ -227,27 +228,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-
             android:orientation="horizontal">
-
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight=".05"/>
             <RelativeLayout
-                android:layout_width="140dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_height="100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/pressuretext4"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="22dp"
+                    android:layout_marginTop="20dp"
                     android:text="@string/pressure"
                     android:gravity="center"
                     android:textColor="#707070"
@@ -260,39 +260,35 @@
                     android:onClick="click"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/pressuretext4"
                     android:layout_alignTop="@+id/pressuretext4"
-                    android:layout_alignEnd="@+id/pressuretext4"
                     android:layout_alignBottom="@+id/pressuretext4"
                     android:layout_gravity="center"
-                    android:layout_marginStart="17dp"
-                    android:layout_marginTop="-19dp"
-                    android:layout_marginEnd="17dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/pressure"
-                    android:layout_alignLeft="@+id/pressuretext4"
-                    android:layout_alignRight="@+id/pressuretext4"
                     android:contentDescription="@string/pressure" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight=".1"/>
 
             <RelativeLayout
-                android:layout_width="140dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_gravity="center"
                 android:layout_height="100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/temparaturetext5"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="22dp"
+                    android:layout_marginTop="20dp"
                     android:text="@string/temparature"
                     android:gravity="center"
                     android:textColor="#707070"
@@ -305,24 +301,18 @@
                     android:onClick="click"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/temparaturetext5"
+                    android:layout_centerHorizontal="true"
                     android:layout_alignTop="@+id/temparaturetext5"
-                    android:layout_alignEnd="@+id/temparaturetext5"
                     android:layout_alignBottom="@+id/temparaturetext5"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="17dp"
-                    android:layout_marginTop="-19dp"
-                    android:layout_marginEnd="17dp"
+                    android:layout_marginTop="-20dp"
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/temparature"
-                    android:layout_alignLeft="@+id/temparaturetext5"
-                    android:layout_alignRight="@+id/temparaturetext5"
                     android:contentDescription="@string/temparature" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight=".05"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -333,9 +323,10 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight=".05"/>
             <RelativeLayout
-                android:layout_width="140dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_gravity="center"
                 android:layout_height="100dp">
                 <TextView
@@ -361,27 +352,23 @@
                     android:onClick="click"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/timetext6"
+                    android:layout_centerHorizontal="true"
                     android:layout_alignTop="@+id/timetext6"
-                    android:layout_alignEnd="@+id/timetext6"
                     android:layout_alignBottom="@+id/timetext6"
                     android:layout_gravity="center"
-                    android:layout_marginStart="17dp"
-                    android:layout_marginTop="-19dp"
-                    android:layout_marginEnd="17dp"
+                    android:layout_marginTop="-20dp"
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/time"
-                    android:layout_alignLeft="@+id/timetext6"
-                    android:layout_alignRight="@+id/timetext6"
                     android:contentDescription="@string/time" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight=".1"/>
 
             <RelativeLayout
-                android:layout_width="140dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_gravity="center"
                 android:layout_height="100dp">
                 <TextView
@@ -406,24 +393,19 @@
                     android:onClick="click"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/weighttext7"
                     android:layout_alignTop="@+id/weighttext7"
-                    android:layout_alignEnd="@+id/weighttext7"
+
                     android:layout_alignBottom="@+id/weighttext7"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="17dp"
-                    android:layout_marginTop="-19dp"
-                    android:layout_marginEnd="17dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-20dp"
                     android:layout_marginBottom="56dp"
                     android:src="@drawable/weight"
-                    android:layout_alignLeft="@+id/weighttext7"
-                    android:layout_alignRight="@+id/weighttext7"
                     android:contentDescription="@string/weight" />
             </RelativeLayout>
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight=".05"/>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
