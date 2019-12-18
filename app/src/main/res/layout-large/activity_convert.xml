@@ -189,28 +189,26 @@
             android:paddingLeft="20dp" />
 
         <TextView
-            android:layout_width="24dp"
-            android:layout_height="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignTop="@+id/spinner2"
             android:layout_alignBottom="@+id/spinner2"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="19dp"
-            android:layout_marginTop="-10dp"
-            android:layout_marginEnd="715dp"
-            android:layout_marginRight="124dp"
-            android:layout_marginBottom="650dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="-17dp"
+            android:layout_marginEnd="400dp"
+            android:layout_marginRight="400dp"
+            android:layout_marginBottom="310dp"
             android:background="#fff"
+            android:gravity="center"
             android:text="@string/to"
             android:textAlignment="center"
-            android:gravity="center"
             android:textColor="#000"
             android:textSize="18sp" />
-
-
     </RelativeLayout>
     <View
         android:layout_width="0dp"

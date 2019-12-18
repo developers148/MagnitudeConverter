@@ -41,7 +41,6 @@ class WordNNumber {
         onumbers.put("thousand", 1000);
         onumbers.put("million", 1000000);
         onumbers.put("billion", 1000000000);
-
         //numbers.put("", );
     }
     static long wordToNumber(String input) {
