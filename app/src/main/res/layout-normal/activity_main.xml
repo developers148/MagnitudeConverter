@@ -184,7 +184,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_height="100dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
                     android:onClick="click" android:id="@+id/wordtext3"
 
@@ -227,7 +227,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/linearlayoutmargin_8dp"
             android:orientation="horizontal">
             <View
                 android:layout_width="0dp"
@@ -237,7 +237,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_height="100dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/pressuretext4"
@@ -278,7 +278,7 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_gravity="center"
-                android:layout_height="100dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/temparaturetext5"
@@ -317,7 +317,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/linearlayoutmargin_8dp"
             android:orientation="horizontal">
 
             <View
@@ -328,7 +328,7 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_gravity="center"
-                android:layout_height="100dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
 
                     android:onClick="click"
@@ -370,12 +370,12 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_gravity="center"
-                android:layout_height="100dp">
+                android:layout_height="@dimen/relativelayoutheight_100dp">
                 <TextView
                     android:onClick="click"
                     android:id="@+id/weighttext7"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
