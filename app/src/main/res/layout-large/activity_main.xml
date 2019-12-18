@@ -125,7 +125,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/linearlayoutmargin_8dp"
 
             android:orientation="horizontal">
 
@@ -230,7 +230,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/linearlayoutmargin_8dp"
 
             android:orientation="horizontal">
 
@@ -333,7 +333,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/linearlayoutmargin_8dp"
 
             android:orientation="horizontal">
 
