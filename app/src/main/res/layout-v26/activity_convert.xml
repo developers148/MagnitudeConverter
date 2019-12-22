@@ -12,14 +12,14 @@
 
     <TextView
         android:id="@+id/convertiontype"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="@dimen/titletext25_sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/currency"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="@dimen/titletextmarginleft_16dp"
         android:textColor="#000"
-        android:textSize="20sp"
-        android:layout_marginStart="16dp" />
+        android:textSize="@dimen/titletextsize_20sp"
+        android:layout_marginStart="@dimen/titlemarginstart_16dp" />
 
 
     <LinearLayout
@@ -28,133 +28,117 @@
         android:background="#fff"
         android:orientation="horizontal">
 
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/mylayout"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/constantlayoutmargin_8dp"
             android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/spinner"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:hint="@string/usd"
-                android:paddingStart="20dp"
-                android:layout_margin="8dp"
+                android:layout_height="@dimen/constantlayotuedtheight"
+                android:layout_margin="@dimen/edittextmargin_8dp"
                 android:background="@drawable/border"
-                android:paddingLeft="20dp"
-                android:autofillHints=""
-                android:inputType="number" />
+                android:hint="USD"
+                android:textSize="@dimen/edittexttextsize_16sp"
+                android:paddingStart="@dimen/edittextpaddingstart_10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingLeft="@dimen/edittextpaddingstart_10dp" />
 
             <TextView
-                android:layout_width="39dp"
-                android:layout_height="17dp"
-                android:layout_alignTop="@+id/spinner"
-                android:layout_alignBottom="@+id/spinner"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginStart="19dp"
-                android:layout_marginLeft="19dp"
-                android:layout_marginTop="-10dp"
-                android:layout_marginEnd="109dp"
-                android:layout_marginRight="109dp"
-                android:layout_marginBottom="38dp"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="#fff"
-                android:text="@string/from"
+                android:text="From"
                 android:textAlignment="center"
                 android:textColor="#000"
-                android:textSize="12sp" />
+                android:textSize="@dimen/textviewtextsize_12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/spinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.150"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/spinner"
+                app:layout_constraintVertical_bias="0.0" />
 
             <ImageButton
                 android:id="@+id/imagebutton"
-                android:layout_width="17dp"
-                android:layout_height="15dp"
-                android:layout_alignTop="@+id/spinner"
-                android:layout_alignEnd="@+id/spinner"
-                android:layout_alignRight="@+id/spinner"
-                android:layout_alignBottom="@+id/spinner"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="131dp"
-                android:layout_marginLeft="131dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="11dp"
-                android:layout_marginRight="11dp"
-                android:layout_marginBottom="14dp"
+                android:layout_width="@dimen/imageviewsize_25dp"
+                android:layout_height="@dimen/imageviewsize_25dp"
                 android:background="#fff"
                 android:src="@drawable/ic_arrow_downward_black_24dp"
-                android:contentDescription="@string/todo" />
-        </RelativeLayout>
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/spinner"
+                app:layout_constraintHorizontal_bias="0.974"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <ImageView
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="@dimen/imageviewconvert_45dp"
+            android:layout_height="@dimen/imageviewconvert_45dp"
             android:src="@drawable/transfer"
             android:layout_gravity="center"
             android:contentDescription="@string/todo" />
 
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/mylayout1"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/constantlayoutmargin_8dp"
             android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/spinner1"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_margin="8dp"
-                android:paddingStart="20dp"
-                android:hint="@string/bdt"
+                android:layout_height="@dimen/constantlayotuedtheight"
+                android:layout_margin="@dimen/edittextmargin_8dp"
                 android:background="@drawable/border"
-                android:paddingLeft="20dp"
-                android:importantForAutofill="no"
-                android:inputType="number" />
+                android:hint="USD"
+                android:textSize="@dimen/edittexttextsize_16sp"
+                android:paddingStart="@dimen/edittextpaddingstart_10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingLeft="@dimen/edittextpaddingstart_10dp" />
 
             <TextView
-                android:layout_width="24dp"
-                android:layout_height="19dp"
-                android:layout_alignTop="@+id/spinner1"
-                android:layout_alignBottom="@+id/spinner1"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginStart="19dp"
-                android:layout_marginLeft="19dp"
-                android:layout_marginTop="-10dp"
-                android:layout_marginEnd="124dp"
-                android:layout_marginRight="124dp"
-                android:layout_marginBottom="37dp"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="#fff"
-                android:text="@string/to"
+                android:text="To"
                 android:textAlignment="center"
                 android:textColor="#000"
-                android:textSize="12sp" />
+                android:textSize="@dimen/textviewtextsize_12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/spinner1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.130"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/spinner1"
+                app:layout_constraintVertical_bias="0.0" />
 
             <ImageButton
                 android:id="@+id/imagebutton1"
-                android:layout_width="22dp"
-                android:layout_height="19dp"
-                android:layout_alignTop="@+id/spinner1"
-                android:layout_alignEnd="@+id/spinner1"
-                android:layout_alignRight="@+id/spinner1"
-                android:layout_alignBottom="@+id/spinner1"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="131dp"
-                android:layout_marginLeft="131dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="11dp"
-                android:layout_marginRight="11dp"
-                android:layout_marginBottom="14dp"
+                android:layout_width="@dimen/imageviewsize_25dp"
+                android:layout_height="@dimen/imageviewsize_25dp"
                 android:background="#fff"
                 android:src="@drawable/ic_arrow_downward_black_24dp"
-                android:contentDescription="@string/todo" />
-        </RelativeLayout>
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/spinner1"
+                app:layout_constraintHorizontal_bias="0.974"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </LinearLayout>
@@ -166,8 +150,8 @@
         android:text="@string/convert"
         android:drawableLeft="@drawable/buttonlogo"
         android:padding="8dp"
-        android:drawablePadding="8dp"
-        android:layout_marginTop="8dp"
+        android:drawablePadding="@dimen/buttondrawablepadding_8dp"
+        android:layout_marginTop="@dimen/buttonmargintop_8dp"
         android:background="@drawable/buttonbg"
         android:layout_gravity="center"
         android:drawableStart="@drawable/buttonlogo" />
@@ -178,49 +162,45 @@
         android:layout_height="0dp"
         android:layout_weight=".2"/>
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/mylayout2"
-        android:visibility="visible"
         android:layout_width="match_parent"
-        android:layout_margin="8dp"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
         <EditText
             android:id="@+id/spinner2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="8dp"
-            android:paddingStart="20dp"
-            android:maxLines="25"
-            android:hint="@string/bdt"
+            android:layout_margin="@dimen/edittextmargin_8dp"
             android:background="@drawable/border"
-            android:paddingLeft="20dp"
-            android:autofillHints=""
-            android:inputType="number" />
+            android:hint="BDT"
+            android:textSize="@dimen/edittexttextsize_16sp"
+            android:paddingStart="@dimen/edittextpaddingstart_10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingLeft="@dimen/edittextpaddingstart_10dp" />
 
         <TextView
-            android:layout_width="24dp"
-            android:layout_height="19dp"
-            android:layout_alignTop="@+id/spinner2"
-            android:layout_alignBottom="@+id/spinner2"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="19dp"
-            android:layout_marginLeft="19dp"
-            android:layout_marginTop="-10dp"
-            android:layout_marginEnd="350dp"
-            android:layout_marginRight="124dp"
-            android:layout_marginBottom="350dp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="#fff"
-            android:text="@string/to"
+            android:text="To"
             android:textAlignment="center"
             android:textColor="#000"
-            android:textSize="12sp" />
+            android:textSize="@dimen/textviewtextsize_12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/spinner2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spinner2"
+            app:layout_constraintVertical_bias="0.0" />
 
-
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
