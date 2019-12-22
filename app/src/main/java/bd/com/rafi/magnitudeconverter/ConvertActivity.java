@@ -63,7 +63,7 @@ public class ConvertActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 showPopup3(view);
-                e3.setHint(to);
+
             }
         });
 
@@ -227,7 +227,7 @@ public class ConvertActivity extends AppCompatActivity {
                 e2.setHint(subitem.get(0));
                 to=subitem.get(0);
                 e3.setHint(to);
-
+                e3.setText("");
                 return true;
             }
         });
@@ -247,6 +247,7 @@ public class ConvertActivity extends AppCompatActivity {
                 e2.setHint(charSequence);
                 to=charSequence.toString();
                 e3.setHint(to);
+                e3.setText("");
                 return true;
             }
         });
