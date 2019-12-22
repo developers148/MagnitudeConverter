@@ -14,7 +14,8 @@
     <dimen name="imageviewmarginbottom_56dp">110dp</dimen>
 
     <dimen name="relativelayoutheight_100dp">200dp</dimen>
-    <dimen name="textviewtextsize_30sp">30sp</dimen>
+    <dimen name="textviewtextsize_30sp">25sp</dimen>
     <dimen name="imageviewwidth_60dp">60dp</dimen>
     <dimen name="imageviewheigth_60dp">60dp</dimen>
+    <dimen name="edittextsize">18sp</dimen>
 </resources>

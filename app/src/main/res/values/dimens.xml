@@ -26,4 +26,6 @@
 
     <dimen name="imageviewheigth_60dp">60dp</dimen>
 
+    <dimen name="edittextsize">18sp</dimen>
+
 </resources>
