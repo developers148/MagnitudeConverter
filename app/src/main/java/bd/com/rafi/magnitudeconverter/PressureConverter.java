@@ -32,23 +32,23 @@ class PressureConverter {
                         finalresult = String.valueOf(i * 14.503773773);
                         break;
                     case "ATM":
-                        finalresult = String.format("%.12", i * 0.9869232667);
+                        finalresult = String.format("%.12f", i * 0.9869232667);
                         break;
                 }
                 break;
             case "Pascal":
                 switch (convertTo) {
                     case "ATM":
-                        finalresult = String.format("%.12", i * 0.0000098692);
+                        finalresult = String.format("%.12f", i * 0.0000098692);
                         break;
                     case "KiloPascal":
-                        finalresult = String.format("%.12", i * 0.001);
+                        finalresult = String.format("%.12f", i * 0.001);
                         break;
                     case "Bar":
-                        finalresult = String.format("%.12", i * 0.00001);
+                        finalresult = String.format("%.12f", i * 0.00001);
                         break;
                     case "PSI":
-                        finalresult = String.format("%.12", i * 0.0001450377);
+                        finalresult = String.format("%.12f", i * 0.0001450377);
                         break;
                     case "pascal":
                         finalresult = String.valueOf(i * 1);
@@ -70,7 +70,7 @@ class PressureConverter {
                         finalresult = String.valueOf(i * 1000);
                         break;
                     case "ATM":
-                        finalresult = String.format("%.12", i * 0.0098692327);
+                        finalresult = String.format("%.12f", i * 0.0098692327);
                         break;
                 }
                 break;
