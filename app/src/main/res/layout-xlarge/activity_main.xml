@@ -104,7 +104,7 @@
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
                     android:text="@string/currency"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView
@@ -122,7 +122,7 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight=".05" />
+                android:layout_weight=".1" />
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -145,7 +145,7 @@
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
                     android:text="@string/length"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView
@@ -205,7 +205,7 @@
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
                     android:text="@string/number"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:textSize="40sp" />
 
                 <ImageView
@@ -229,7 +229,7 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="0.05" />
+                android:layout_weight="0.1" />
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -255,7 +255,7 @@
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
                     android:text="@string/word"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView
@@ -318,7 +318,7 @@
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
                     android:text="@string/pressure"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView
@@ -340,7 +340,7 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="0.05" />
+                android:layout_weight="0.1" />
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -364,7 +364,7 @@
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
                     android:text="@string/temparature"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView
@@ -425,7 +425,7 @@
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
                     android:text="@string/time"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView
@@ -447,7 +447,7 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="0.05" />
+                android:layout_weight="0.1" />
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -472,7 +472,7 @@
                     android:background="@drawable/textviewborderxtralange"
                     android:gravity="center"
                     android:text="@string/weight"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:textSize="@dimen/textviewtextsize_30sp" />
 
                 <ImageView

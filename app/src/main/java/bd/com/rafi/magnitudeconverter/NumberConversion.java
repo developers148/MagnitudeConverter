@@ -35,8 +35,12 @@ class NumberConversion {
             case "Binary":
                 switch (convertTo) {
                     case "Decimal":
-
-                        finalconverted = String.valueOf(Integer.parseInt(value, 2));
+                            try {
+                                finalconverted = String.valueOf(Integer.parseInt(value, 2));
+                            }
+                            catch (NumberFormatException e){
+                                finalconverted="Please input binary number";
+                            }
                         break;
                     case "Octal":
                         long l = Long.parseLong(value, 2);

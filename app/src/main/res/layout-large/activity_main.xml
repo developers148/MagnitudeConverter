@@ -59,15 +59,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/titlemargintop_10dp"
                 android:layout_marginBottom="@dimen/titlemarginbottom_4dp"
-                android:layout_marginStart="@dimen/titlemarginstart_8dp"
                 android:text="@string/categories"
                 android:textSize="@dimen/titletextsize_20sp"
-                android:layout_marginLeft="@dimen/titlemarginstart_8dp" />
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp" />
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight=".2"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -98,7 +99,7 @@
                     android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/currency"
                     android:gravity="center"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:textSize="@dimen/textviewtextsize_30sp"
@@ -124,7 +125,7 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight=".05"/>
+                android:layout_weight=".1"/>
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -144,7 +145,7 @@
                     android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/length"
                     android:gravity="center"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:textSize="@dimen/textviewtextsize_30sp"
@@ -203,7 +204,7 @@
                     android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/number"
                     android:gravity="center"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:textSize="@dimen/textviewtextsize_30sp"
@@ -229,7 +230,7 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight=".05"/>
+                android:layout_weight=".1"/>
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -249,7 +250,7 @@
                     android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/word"
                     android:gravity="center"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:textSize="@dimen/textviewtextsize_30sp"
@@ -308,7 +309,7 @@
                     android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/pressure"
                     android:gravity="center"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:textSize="@dimen/textviewtextsize_30sp"
@@ -334,7 +335,7 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight=".05"/>
+                android:layout_weight=".1"/>
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -354,7 +355,7 @@
                     android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/temparature"
                     android:gravity="center"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:textSize="@dimen/textviewtextsize_30sp"
@@ -411,7 +412,7 @@
                     android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/time"
                     android:gravity="center"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:textSize="@dimen/textviewtextsize_30sp"
@@ -437,7 +438,7 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight=".05"/>
+                android:layout_weight=".1"/>
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -457,7 +458,7 @@
                     android:layout_marginTop="@dimen/textviewmargintop_20dp"
                     android:text="@string/weight"
                     android:gravity="center"
-                    android:textColor="#707070"
+                    android:textColor="@color/main_text_color"
                     android:layout_marginBottom="@dimen/textviewmarginbottom_2dp"
                     android:background="@drawable/textviewborder"
                     android:textSize="@dimen/textviewtextsize_30sp"

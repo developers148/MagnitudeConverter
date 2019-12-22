@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <dimen name="titletext25_sp">25dp</dimen>
+    <dimen name="titletextmarginleft_16dp">16dp</dimen>
+    <dimen name="titletextsize_20sp">25sp</dimen>
+    <dimen name="titlemarginstart_16dp">16dp</dimen>
+    <dimen name="constantlayoutmargin_8dp">8dp</dimen>
+    <dimen name="constantlayotuedtheight">?attr/actionBarSize</dimen>
+    <dimen name="edittextmargin_8dp">8dp</dimen>
+    <dimen name="edittexttextsize_16sp">16sp</dimen>
+    <dimen name="edittextpaddingstart_10dp">10dp</dimen>
+    <dimen name="textviewtextsize_12sp">12sp</dimen>
+    <dimen name="imageviewsize_25dp">25dp</dimen>
+    <dimen name="imageviewconvert_45dp">45dp</dimen>
+    <dimen name="buttondrawablepadding_8dp">8dp</dimen>
+    <dimen name="buttonmargintop_8dp">8dp</dimen>
+
+
     <dimen name="titlemargintop_10dp">10dp</dimen>
     <dimen name="titlemarginbottom_4dp">4dp</dimen>
     <dimen name="titlemarginstart_8dp">9dp</dimen>
-    <dimen name="titletextsize_20sp">35sp</dimen>
+
 
     <dimen name="linearlayoutmargin_8dp">8dp</dimen>
 
@@ -14,8 +31,14 @@
     <dimen name="imageviewmarginbottom_56dp">110dp</dimen>
 
     <dimen name="relativelayoutheight_100dp">200dp</dimen>
-    <dimen name="textviewtextsize_30sp">25sp</dimen>
+    <dimen name="textviewtextsize_30sp">20sp</dimen>
     <dimen name="imageviewwidth_60dp">60dp</dimen>
     <dimen name="imageviewheigth_60dp">60dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="textsize_30sp">30sp</dimen>
+    <dimen name="textsize_20sp">20sp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
     <dimen name="edittextsize">18sp</dimen>
 </resources>
