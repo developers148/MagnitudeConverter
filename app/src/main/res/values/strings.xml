@@ -45,6 +45,25 @@
         <item>Dirham</item>
 
     </string-array>
+
+
+    <string name="golam_name">Golam Moula Mojumder</string>
+    <string name="golam_mail">toumalmojumder@gmail.com</string>
+    <string name="golam_fb">fb/toumalmojumder</string>
+
+    <string name="mychacl_name">Michacl Karmoker</string>
+    <string name="mychacl_mail">mskdesk@gmail.com</string>
+    <string name="mychacl_fb">fb/suvo94</string>
+
+    <string name="tarek_name">Mahmudul Hasan Tarek</string>
+    <string name="tarek_mail">tarekint1@gmail.com</string>
+    <string name="tarek_fb">fb/mahmudul.h.tarek</string>
+
+    <string name="ishtiaq_name">Ishtiaq Ahmad</string>
+    <string name="ishtiaq_mail">ishtiaq.ahmad5662@gmail.com</string>
+    <string name="ishtiaq_fb">fb/ahmad.rion</string>
+
+
     <string name="project_title">ADVANCED PROFESSIONAL COACHING WITH INDUSTRY ATTACHMENT</string>
     <string name="project_email">pd.sdmga@gmail.com</string>
     <string name="project_number">+88–02–8181286</string>
