@@ -3,7 +3,7 @@
 
     <dimen name="titletext25_sp">25dp</dimen>
     <dimen name="titletextmarginleft_16dp">16dp</dimen>
-    <dimen name="titletextsize_20sp">20sp</dimen>
+    <dimen name="titletextsize_20sp">50sp</dimen>
     <dimen name="titlemarginstart_16dp">16dp</dimen>
     <dimen name="constantlayoutmargin_8dp">8dp</dimen>
     <dimen name="constantlayotuedtheight">?attr/actionBarSize</dimen>
@@ -22,7 +22,7 @@
 
     <dimen name="titlemarginbottom_4dp">4dp</dimen>
 
-    <dimen name="titlemarginstart_8dp">70dp</dimen>
+    <dimen name="titlemarginstart_8dp">16dp</dimen>
 
     <dimen name="linearlayoutmargin_8dp">8dp</dimen>
 
