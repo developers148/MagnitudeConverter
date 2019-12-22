@@ -42,4 +42,9 @@
     <dimen name="textviewtextsize_30sp">30sp</dimen>
     <dimen name="imageviewwidth_60dp">60dp</dimen>
     <dimen name="imageviewheigth_60dp">60dp</dimen>
+    <dimen name="card_corner_redious_5dp">5dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="imageview_100dp">100dp</dimen>
+    <dimen name="textsize_20sp">20sp</dimen>
 </resources>
