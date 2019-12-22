@@ -29,8 +29,6 @@
     <string name="todo">TODO</string>
 
 
-
-
     <string-array name="spinner_arrays">
         <item>In Word</item>
         <item>In Numeric</item>

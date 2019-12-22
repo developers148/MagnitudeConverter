@@ -2,6 +2,7 @@ package bd.com.rafi.magnitudeconverter;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,6 +38,8 @@ public class ConvertActivity extends AppCompatActivity {
         e1=findViewById(R.id.spinner);
         e2=findViewById(R.id.spinner1);
         e3=findViewById(R.id.spinner2);
+        e2.setEnabled(false);
+       // e3.setEnabled(false);
 
 
 
@@ -176,6 +179,7 @@ public class ConvertActivity extends AppCompatActivity {
             case "Word":
                 item.addAll(Arrays.asList(wordtonumber));
                 subitem.addAll(Arrays.asList(wordtonumber));
+                e1.setInputType(InputType.TYPE_CLASS_TEXT);
                 e1.setHint(item.get(0));
                 e2.setHint(item.get(1));
                 from = item.get(0);
@@ -229,6 +233,12 @@ public class ConvertActivity extends AppCompatActivity {
                 CharSequence charSequence=menuItem.getTitle();
                 e1.setHint(charSequence);
                 from=charSequence.toString();
+                if(from.equals("Number")){
+                    e1.setInputType(InputType.TYPE_CLASS_NUMBER);
+                }
+                else{
+                    e1.setInputType(InputType.TYPE_CLASS_TEXT);
+                }
                 //noinspection SuspiciousMethodCalls
                 skip=item.indexOf(charSequence);
                 subitem.clear();
