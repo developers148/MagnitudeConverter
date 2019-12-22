@@ -41,5 +41,6 @@
     <dimen name="textsize_20sp">20sp</dimen>
     <dimen name="padding_5dp">5dp</dimen>
     <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="edittextsize">18sp</dimen>
 
 </resources>
