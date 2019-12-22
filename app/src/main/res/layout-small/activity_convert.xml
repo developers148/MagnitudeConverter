@@ -23,10 +23,11 @@
 
 
     <TextView
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="@dimen/titlemargintop_10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/currency"
+        android:textSize="@dimen/titletextsize_20sp"
         android:layout_marginLeft="10dp"
         android:textColor="@color/convert_text_color"
         android:layout_marginStart="10dp" />

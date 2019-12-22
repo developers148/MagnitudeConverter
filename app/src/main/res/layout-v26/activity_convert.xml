@@ -12,7 +12,7 @@
 
     <TextView
         android:id="@+id/convertiontype"
-        android:layout_marginTop="@dimen/titletext25_sp"
+        android:layout_marginTop="@dimen/titlemargintop_10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/currency"
@@ -150,7 +150,7 @@
         android:layout_height="wrap_content"
         android:text="@string/convert"
         android:drawableLeft="@drawable/buttonlogo"
-        android:padding="8dp"
+        android:padding="@dimen/buttonPadding_8dp"
         android:drawablePadding="@dimen/buttondrawablepadding_8dp"
         android:layout_marginTop="@dimen/buttonmargintop_8dp"
         android:background="@drawable/buttonbg"
