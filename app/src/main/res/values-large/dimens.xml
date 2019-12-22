@@ -2,7 +2,7 @@
 <resources>
     <dimen name="titlemargintop_10dp">10dp</dimen>
     <dimen name="titlemarginbottom_4dp">4dp</dimen>
-    <dimen name="titlemarginstart_8dp">47dp</dimen>
+    <dimen name="titlemarginstart_8dp">9dp</dimen>
     <dimen name="titletextsize_20sp">35sp</dimen>
 
     <dimen name="linearlayoutmargin_8dp">8dp</dimen>

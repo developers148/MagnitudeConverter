@@ -4,19 +4,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.mxn.soul.flowingdrawer_core.FlowingDrawer;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 
 public class TitleActivity extends AppCompatActivity {
 
-
+    private FlowingDrawer mDrawer;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        mDrawer=findViewById(R.id.drawerlayout);
+        setupToolbar();
     }
     public void click(View v){
 
@@ -63,5 +67,16 @@ public class TitleActivity extends AppCompatActivity {
             startActivity(i);
         }
     }
+    protected void setupToolbar() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setNavigationIcon(R.drawable.menuwhite);
 
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDrawer.toggleMenu();
+            }
+        });
+    }
 }

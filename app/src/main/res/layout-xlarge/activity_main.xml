@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<com.mxn.soul.flowingdrawer_core.FlowingDrawer
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:edPosition="1"
+    app:edMenuSize="260dp"
+    app:edMenuBackground="#dddddd">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="top"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Magnitude Converter"
+                    android:textColor="#fff"
+                    android:textSize="25sp"/>
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+<ScrollView
     android:layout_width="match_parent"
     android:background="#D6D4D5"
     android:layout_height="match_parent">
@@ -7,15 +46,31 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/titlemarginstart_8dp"
-            android:layout_marginTop="@dimen/textviewmargintop_20dp"
-            android:layout_marginBottom="@dimen/titlemarginbottom_4dp"
-            android:textSize="@dimen/titletextsize_20sp"
-            android:text="@string/categories"
-            android:layout_marginStart="70dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".05"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/titlemargintop_10dp"
+                android:layout_marginBottom="@dimen/titlemarginbottom_4dp"
+                android:layout_marginStart="@dimen/titlemarginstart_8dp"
+                android:text="@string/categories"
+                android:textSize="@dimen/titletextsize_20sp"
+                android:layout_marginLeft="@dimen/titlemarginstart_8dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".2"/>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -445,3 +500,105 @@
 
     </LinearLayout>
 </ScrollView>
+    </LinearLayout>
+    <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+        android:id="@+id/menulayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/navigationbarheight_180dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/ic_launcher_round"
+                        android:contentDescription="@string/todo" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="start"
+                    android:text="Home"
+                    android:id="@+id/tv_home"
+                    android:layout_margin="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:drawablePadding="8dp"
+                    android:drawableStart="@drawable/ic_home"
+                    android:focusable="true"
+                    android:drawableLeft="@drawable/ic_home" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="start"
+                    android:text="Share"
+                    android:id="@+id/tv_share"
+                    android:layout_margin="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:drawablePadding="8dp"
+                    android:drawableStart="@drawable/ic_share"
+                    android:focusable="true"
+                    android:drawableLeft="@drawable/ic_share" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="start"
+                    android:text="Contact"
+                    android:id="@+id/tv_contact"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_margin="8dp"
+                    android:drawablePadding="8dp"
+                    android:drawableStart="@drawable/ic_contact"
+                    android:focusable="true"
+                    android:drawableLeft="@drawable/ic_contact" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="start"
+                    android:text="About"
+                    android:id="@+id/tv_about"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_margin="8dp"
+                    android:drawablePadding="8dp"
+                    android:drawableStart="@drawable/ic_about"
+                    android:focusable="true"
+                    android:drawableLeft="@drawable/ic_about" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+
+</com.mxn.soul.flowingdrawer_core.FlowingDrawer>
