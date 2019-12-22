@@ -65,4 +65,8 @@
     <string name="project_title">ADVANCED PROFESSIONAL COACHING WITH INDUSTRY ATTACHMENT</string>
     <string name="project_email">pd.sdmga@gmail.com</string>
     <string name="project_number">+88–02–8181286</string>
+    <string name="convert_edit_text_hint_usd">USD</string>
+    <string name="convert_edittext_hint_bdt">BDT</string>
+    <string name="convert_text_view_to">To</string>
+    <string name="convert_textview_from">From</string>
 </resources>
