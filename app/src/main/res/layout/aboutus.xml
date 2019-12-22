@@ -66,7 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/project_title"
-                android:textColor="#000"
+                android:textColor="@color/convert_text_color"
                 android:textSize="@dimen/textsize_20sp"
                 android:layout_marginEnd="@dimen/margin_4dp"
                 android:layout_marginStart="4dp"
@@ -81,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/project_email"
-                android:textColor="#000"
+                android:textColor="@color/convert_text_color"
                 android:textSize="@dimen/textsize_20sp"/>
 
 
@@ -90,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/project_number"
-                android:textColor="#000"
+                android:textColor="@color/convert_text_color"
                 android:textSize="@dimen/textsize_20sp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
