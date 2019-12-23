@@ -47,7 +47,8 @@
     <dimen name="navigationbarheight_180dp">180dp</dimen>
     <dimen name="card_corner_redious_5dp">5sp</dimen>
     <dimen name="buttontextsize_28sp">28sp</dimen>
-
+    <dimen name="edMenuSize_260dp">260dp</dimen>
+    <dimen name="linearlayouttextsize_25sp">25sp</dimen>
 
 
 </resources>

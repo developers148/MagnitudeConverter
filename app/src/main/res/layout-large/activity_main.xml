@@ -8,7 +8,7 @@
     android:clipChildren="false"
     android:clipToPadding="false"
     app:edPosition="1"
-    app:edMenuSize="260dp"
+    app:edMenuSize="@dimen/edMenuSize_260dp"
     app:edMenuBackground="#dddddd">
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:text="Magnitude Converter"
                     android:textColor="#fff"
-                    android:textSize="30sp"/>
+                    android:textSize="@dimen/linearlayouttextsize_25sp"/>
 
             </LinearLayout>
 
@@ -61,8 +61,8 @@
                 android:layout_marginBottom="@dimen/titlemarginbottom_4dp"
                 android:text="@string/categories"
                 android:textSize="@dimen/titletextsize_20sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp" />
+                android:layout_marginStart="@dimen/titlemarginstart_8dp"
+                android:layout_marginLeft="@dimen/titlemarginstart_8dp" />
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"

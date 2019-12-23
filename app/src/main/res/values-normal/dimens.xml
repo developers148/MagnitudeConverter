@@ -48,4 +48,5 @@
     <dimen name="textViewMarginStart_4dp">4dp</dimen>
     <dimen name="buttonPadding_8dp">8dp</dimen>
     <dimen name="buttontextsize_28sp">28sp</dimen>
+    <dimen name="linearlayouttextsize_25sp">25sp</dimen>
 </resources>
