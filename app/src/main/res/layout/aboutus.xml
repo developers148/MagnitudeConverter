@@ -10,7 +10,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="@dimen/card_corner_redious_5dp"
+        app:cardCornerRadius="5dp"
         android:padding="@dimen/padding_5dp">
 
         <LinearLayout

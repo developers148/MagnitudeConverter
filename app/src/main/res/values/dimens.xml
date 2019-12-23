@@ -46,4 +46,6 @@
 
     <dimen name="navigationbarheight_180dp">180dp</dimen>
 
+    <dimen name="card_corner_redious_5dp">5dp</dimen>
+
 </resources>

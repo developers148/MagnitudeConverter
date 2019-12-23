@@ -80,13 +80,13 @@ public class ConvertActivity extends AppCompatActivity {
                             case "Currency":
 
                                 ConverterDollarToBDT converterDollarToBDT = new ConverterDollarToBDT();
-                                String result = String.valueOf(converterDollarToBDT.CurrencyConverter(Float.valueOf(e1.getText().toString()), from, to));
+                                String result = String.valueOf(converterDollarToBDT.CurrencyConverter(Float.valueOf(e1.getText().toString()), from, to))+" "+to;
                                 e3.setText(result);
 
                                 break;
                             case "Length":
                                 LengthConverter lengthConverter = new LengthConverter();
-                                e3.setText(String.valueOf(lengthConverter.getresult(from, to, e1.getText().toString())));
+                                e3.setText(String.valueOf(lengthConverter.getresult(from, to, e1.getText().toString()))+" "+to);
                                 break;
                             case "Number":
                                 NumberConversion n = new NumberConversion();
@@ -104,23 +104,23 @@ public class ConvertActivity extends AppCompatActivity {
                                 break;
                             case "Pressure":
                                 PressureConverter p = new PressureConverter();
-                                e3.setText(p.BarToPascal(e1.getText().toString(), from, to));
+                                e3.setText(p.BarToPascal(e1.getText().toString(), from, to)+" "+to);
 
                                 break;
                             case "Temperature": {
                                 TempCon t = new TempCon();
-                                e3.setText(t.tempConversion(e1.getText().toString(), from, to));
+                                e3.setText(t.tempConversion(e1.getText().toString(), from, to)+" "+to);
                                 break;
                             }
                             case "Time": {
                                 TimeConversion t = new TimeConversion();
-                                e3.setText(t.time(e1.getText().toString(), from, to));
-                                Log.e("time", t.time(e1.getText().toString(), from, to));
+                                e3.setText(t.time(e1.getText().toString(), from, to)+" "+to);
+
                                 break;
                             }
                             case "Weight":
                                 WeightMassConverter w = new WeightMassConverter();
-                                e3.setText(w.weightToMass(e1.getText().toString(), from, to));
+                                e3.setText(w.weightToMass(e1.getText().toString(), from, to)+" "+to);
                                 break;
                         }
                     }
@@ -233,12 +233,7 @@ public class ConvertActivity extends AppCompatActivity {
                 CharSequence charSequence=menuItem.getTitle();
                 e1.setHint(charSequence);
                 from=charSequence.toString();
-                if(from.equals("Number")){
-                    e1.setInputType(InputType.TYPE_CLASS_NUMBER);
-                }
-                else{
-                    e1.setInputType(InputType.TYPE_CLASS_TEXT);
-                }
+                setkey(from);
                 //noinspection SuspiciousMethodCalls
                 skip=item.indexOf(charSequence);
                 subitem.clear();
@@ -248,6 +243,7 @@ public class ConvertActivity extends AppCompatActivity {
                 to=subitem.get(0);
                 e3.setHint(to);
                 e3.setText("");
+                e1.setText("");
                 return true;
             }
         });
@@ -277,5 +273,17 @@ public class ConvertActivity extends AppCompatActivity {
 
 
 
-}
 
+
+private void setkey(String from){
+    if(from.equals("Word")){
+        e1.setInputType(InputType.TYPE_CLASS_TEXT);
+    }
+    else if(from.equals("Hexadecimal")){
+        e1.setInputType(InputType.TYPE_CLASS_TEXT);
+    }
+    else{
+        e1.setInputType(InputType.TYPE_CLASS_NUMBER);
+    }
+}
+}
