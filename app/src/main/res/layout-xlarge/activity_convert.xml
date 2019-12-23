@@ -30,29 +30,28 @@
             android:id="@+id/mylayout"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/constantlayoutmargin_8dp"
             android:layout_height="wrap_content">
 
             <EditText
                 android:id="@+id/spinner"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/edittextmargin_8dp"
                 android:background="@drawable/border"
                 android:hint="@string/convert_edit_text_hint_usd"
-                android:textSize="24sp"
-                android:paddingStart="10dp"
+                android:textSize="@dimen/edittexttextsize_16sp"
+                android:paddingStart="@dimen/edittextpaddingstart_10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:paddingLeft="10dp" />
+                android:paddingLeft="@dimen/edittextpaddingstart_10dp" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="-66dp"
                 android:background="@color/convert_backgroung_color"
                 android:text="@string/convert_textview_from"
                 android:textAlignment="center"
@@ -115,12 +114,11 @@
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="-66dp"
                 android:background="@color/convert_backgroung_color"
                 android:text="@string/convert_text_view_to"
                 android:textAlignment="center"
                 android:textColor="@color/convert_text_color"
-                android:textSize="24sp"
+                android:textSize="@dimen/textviewtextsize_12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintBottom_toTopOf="@id/spinner1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -131,8 +129,8 @@
 
             <ImageButton
                 android:id="@+id/imagebutton1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="@dimen/imageviewsize_25dp"
+                android:layout_height="@dimen/imageviewsize_25dp"
                 android:background="@color/convert_backgroung_color"
                 android:src="@drawable/ic_arrow_downward_black_24dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -150,13 +148,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="@dimen/buttonmargintop_8dp"
         android:background="@drawable/buttonbg"
         android:drawableLeft="@drawable/buttonlogo"
-        android:drawablePadding="16dp"
-        android:padding="16dp"
+        android:padding="@dimen/buttonPadding_8dp"
+        android:drawablePadding="@dimen/buttondrawablepadding_8dp"
         android:text="@string/convert"
-        android:textSize="28sp"
+        android:textSize="@dimen/buttontextsize_28sp"
         />
 
     <View
@@ -168,36 +166,34 @@
         android:id="@+id/mylayout2"
         android:layout_width="match_parent"
         android:layout_weight="1"
-        android:layout_margin="8dp"
         android:layout_height="wrap_content">
 
         <EditText
             android:id="@+id/spinner2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/edittextmargin_8dp"
             android:background="@drawable/border"
             android:hint="@string/convert_edit_text_hint_usd"
-            android:textSize="28sp"
-            android:paddingStart="10dp"
+            android:textSize="@dimen/edittexttextsize_16sp"
+            android:paddingStart="@dimen/edittextpaddingstart_10dp"
 
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:paddingLeft="10dp" />
+            android:paddingLeft="@dimen/edittextpaddingstart_10dp" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="-66dp"
             android:background="@color/convert_backgroung_color"
             android:text="@string/convert_text_view_to"
             android:textAlignment="center"
             android:textColor="@color/convert_text_color"
-            android:textSize="24sp"
+            android:textSize="@dimen/textviewtextsize_12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintBottom_toTopOf="@id/spinner2"
             app:layout_constraintEnd_toEndOf="parent"

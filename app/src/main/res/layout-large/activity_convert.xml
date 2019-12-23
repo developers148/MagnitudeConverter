@@ -156,7 +156,7 @@
         android:padding="@dimen/buttonPadding_8dp"
         android:drawablePadding="@dimen/buttondrawablepadding_8dp"
         android:layout_marginTop="@dimen/buttonmargintop_8dp"
-        android:textSize="@dimen/textviewtextsize_30sp"
+        android:textSize="@dimen/buttontextsize_28sp"
         android:background="@drawable/buttonbg"
         android:layout_gravity="center"/>
 
@@ -198,7 +198,6 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="-66dp"
             android:background="@color/convert_backgroung_color"
             android:text="@string/convert_text_view_to"
             android:textAlignment="center"

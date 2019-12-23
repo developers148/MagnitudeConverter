@@ -13,14 +13,16 @@
 
     <TextView
         android:id="@+id/convertiontype"
-        android:layout_marginTop="@dimen/titlemargintop_10dp"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Currency"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="@dimen/titlemarginstart_16dp"
+        android:layout_marginLeft="@dimen/titletextmarginleft_16dp"
+        android:layout_marginTop="@dimen/titlemargintop_10dp"
+
         android:textColor="@color/convert_text_color"
-        android:textSize="20sp"
-        android:layout_marginStart="16dp" />
+        android:textSize="@dimen/titletextsize_20sp" />
 
 
     <LinearLayout
@@ -34,7 +36,7 @@
             android:id="@+id/mylayout"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/constantlayoutmargin_8dp"
             android:layout_height="wrap_content">
 
             <EditText
@@ -42,15 +44,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:inputType="number"
+                android:layout_margin="@dimen/edittextmargin_8dp"
                 android:background="@drawable/border"
                 android:hint="@string/convert_edit_text_hint_usd"
-                android:textSize="16sp"
-                android:paddingStart="10dp"
+                android:textSize="@dimen/edittexttextsize_16sp"
+                android:paddingStart="@dimen/edittextpaddingstart_10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:paddingLeft="10dp" />
+                android:paddingLeft="@dimen/edittextpaddingstart_10dp" />
 
             <TextView
                 android:id="@+id/textView"
@@ -150,6 +153,7 @@
         android:layout_width="wrap_content"
         android:layout_height="?attr/actionBarSize"
         android:text="@string/convert"
+        android:textSize="@dimen/buttontextsize_28sp"
         android:drawableLeft="@drawable/buttonlogo"
         android:padding="12dp"
         android:drawablePadding="12dp"

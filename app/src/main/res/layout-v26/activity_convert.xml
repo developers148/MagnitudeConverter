@@ -153,6 +153,7 @@
         android:padding="@dimen/buttonPadding_8dp"
         android:drawablePadding="@dimen/buttondrawablepadding_8dp"
         android:layout_marginTop="@dimen/buttonmargintop_8dp"
+        android:textSize="@dimen/buttontextsize_28sp"
         android:background="@drawable/buttonbg"
         android:layout_gravity="center"
         android:drawableStart="@drawable/buttonlogo" />

@@ -43,5 +43,6 @@
     <dimen name="edittextsize">18sp</dimen>
     <dimen name="textViewMarginStart_4dp">4dp</dimen>
     <dimen name="buttonPadding_8dp">8dp</dimen>
+    <dimen name="buttontextsize_28sp">28sp</dimen>
 
 </resources>
