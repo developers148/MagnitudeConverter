@@ -45,8 +45,9 @@
     <dimen name="buttonPadding_8dp">8dp</dimen>
 
     <dimen name="navigationbarheight_180dp">180dp</dimen>
+    <dimen name="card_corner_redious_5dp">5sp</dimen>
     <dimen name="buttontextsize_28sp">28sp</dimen>
 
-    <dimen name="card_corner_redious_5dp">5dp</dimen>
+
 
 </resources>
