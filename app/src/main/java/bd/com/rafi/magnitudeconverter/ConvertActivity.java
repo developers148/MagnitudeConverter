@@ -110,6 +110,8 @@ public class ConvertActivity extends AppCompatActivity {
                             case "Temperature": {
                                 TempCon t = new TempCon();
                                 e3.setText(t.tempConversion(e1.getText().toString(), from, to)+" "+to);
+
+                                Log.e("eroor",t.tempConversion(e1.getText().toString(), from, to));
                                 break;
                             }
                             case "Time": {
@@ -121,6 +123,7 @@ public class ConvertActivity extends AppCompatActivity {
                             case "Weight":
                                 WeightMassConverter w = new WeightMassConverter();
                                 e3.setText(w.weightToMass(e1.getText().toString(), from, to)+" "+to);
+
                                 break;
                         }
                     }

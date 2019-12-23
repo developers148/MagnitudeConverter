@@ -28,7 +28,7 @@ class TimeConversion {
                         week = Double.parseDouble(value) * 9.9206e-5;
                         finalconverted = String.valueOf(week);
                         break;
-                    case "month":
+                    case "Month":
                         double month;
                         month = Double.parseDouble(value) * 2.2831e-5;
                         finalconverted = String.valueOf(month);
@@ -64,7 +64,7 @@ class TimeConversion {
                         week = Double.parseDouble(value) * 1.6534e-6;
                         finalconverted = String.valueOf(week);
                         break;
-                    case "month":
+                    case "Month":
                         double month;
                         month = Double.parseDouble(value) * 3.8052e-7;
                         finalconverted = String.valueOf(month);
@@ -99,7 +99,7 @@ class TimeConversion {
                         week = Double.parseDouble(value) * 0.00595238;
                         finalconverted = String.valueOf(week);
                         break;
-                    case "month":
+                    case "Month":
                         double month;
                         month = Double.parseDouble(value) * 0.00136986;
                         finalconverted = String.valueOf(month);
@@ -134,7 +134,7 @@ class TimeConversion {
                         week = Double.parseDouble(value) * 0.142857;
                         finalconverted = String.valueOf(week);
                         break;
-                    case "month":
+                    case "Month":
                         double month;
                         month = Double.parseDouble(value) * 0.0328767;
                         finalconverted = String.valueOf(month);
@@ -169,7 +169,7 @@ class TimeConversion {
                         day = Double.parseDouble(value) * 7;
                         finalconverted = String.valueOf(day);
                         break;
-                    case "month":
+                    case "Month":
                         double month;
                         month = Double.parseDouble(value) * 0.230137;
                         finalconverted = String.valueOf(month);
@@ -182,7 +182,7 @@ class TimeConversion {
                 }
                 break;
             //converted from month
-            case "month":
+            case "Month":
                 switch (converTo) {
                     case "Hour":
                         double hour;
@@ -234,7 +234,7 @@ class TimeConversion {
                         secend = Double.parseDouble(value) * 3.154e+7;
                         finalconverted = String.valueOf(secend);
                         break;
-                    case "month":
+                    case "Month":
                         double month;
                         month = Double.parseDouble(value) * 12;
                         finalconverted = String.valueOf(month);

@@ -99,6 +99,11 @@ class WeightMassConverter {
                     case "Ounce":
                         finalresult = String.format("%.12f", i * 0.0352739619);
                         break;
+
+                    case "Pound":
+                        finalresult = String.format("%.12f", i * 0.00220462);
+                        break;
+
                 }
                 break;
         }

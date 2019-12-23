@@ -23,10 +23,11 @@ class TempCon {
             case "Fahrenheit":
                 switch (convertTo){
                     case "Celsius" :
-                        finalresult = String.valueOf((i - 32) * (float) (5 / 9));
-                    break;
-                    case "Fahrenheit" :
-                        finalresult = String.valueOf((i - 32) * (float) (5 / 9) + 273.15);
+                        finalresult = String.valueOf((i - 32)*(.55555));
+
+                        break;
+                    case "Kelvin" :
+                        finalresult = String.valueOf((i - 32) *  (.55555) + 273.15);
                         break;
                 }
                 break;

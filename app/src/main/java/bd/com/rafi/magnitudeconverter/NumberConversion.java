@@ -43,18 +43,30 @@ class NumberConversion {
                             }
                         break;
                     case "Octal":
-                        long l = Long.parseLong(value, 2);
-                        finalconverted = Long.toOctalString(l);
+                        try{
+                            long l = Long.parseLong(value, 2);
+                            finalconverted = Long.toOctalString(l);
+                        }catch (NumberFormatException e){
+                            finalconverted="Please input binary number";
+                        }
+
+
                         break;
                     case "Hexadecimal":
-                        int decimal = Integer.parseInt(value, 2);
-                        finalconverted = Integer.toString(decimal, 16);
+                        try{
+                            int decimal = Integer.parseInt(value, 2);
+                            finalconverted = Integer.toString(decimal, 16);
+
+                        }catch (NumberFormatException e){
+                            finalconverted="Please input binary number";
+                        }
+
                         break;
                 }
                 break;
             case "Octal":
                 switch (convertTo) {
-                    case "decimal": {
+                    case "Decimal": {
                         int decimal = Integer.parseInt(value, 8);
                         finalconverted = String.valueOf(decimal);
                         break;
@@ -74,18 +86,42 @@ class NumberConversion {
             case "Hexadecimal":
                 switch (convertTo) {
                     case "Decimal": {
-                        int hexadecimal = Integer.parseInt(value, 16);
-                        finalconverted = String.valueOf(hexadecimal);
+
+
+                        try{
+                            int hexadecimal = Integer.parseInt(value, 16);
+                            finalconverted = String.valueOf(hexadecimal);
+
+                        }catch(NumberFormatException e){
+
+                            finalconverted="Please input Hexadecimal number";
+                        }
+
                         break;
                     }
                     case "Binary": {
-                        int hexadecimal = Integer.parseInt(value, 16);
-                        finalconverted = Integer.toBinaryString(hexadecimal);
+
+                        try{
+                            int hexadecimal = Integer.parseInt(value, 16);
+                            finalconverted = Integer.toBinaryString(hexadecimal);
+
+                        }catch (NumberFormatException e){
+
+                            finalconverted="Please input Hexadecimal number";
+                        }
+
                         break;
                     }
                     case "Octal": {
-                        int hexadecimal = Integer.parseInt(value, 16);
-                        finalconverted = Long.toOctalString(hexadecimal);
+
+                        try{
+                            int hexadecimal = Integer.parseInt(value, 16);
+                            finalconverted = Long.toOctalString(hexadecimal);
+
+                        }catch (NumberFormatException e){
+                            finalconverted="Please input Hexadecimal number";
+                        }
+
                         break;
                     }
                 }
