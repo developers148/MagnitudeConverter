@@ -3,9 +3,11 @@ package bd.com.rafi.magnitudeconverter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.mxn.soul.flowingdrawer_core.FlowingDrawer;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -15,12 +17,53 @@ public class TitleActivity extends AppCompatActivity {
     private FlowingDrawer mDrawer;
 
 
+    TextView tvContract;
+
+    AlertDialog.Builder builder;
+    AlertDialog alertDialog;
+
+
+
+
+    void showContactDialogueBox(){
+        mDrawer.closeMenu(true);
+        View dialogView = getLayoutInflater().inflate(R.layout.contact_us, null);
+        builder.setView(null);
+        builder.setView(dialogView);
+
+        alertDialog = builder.create();
+
+        alertDialog.setCanceledOnTouchOutside(true);
+
+        alertDialogDismiss();
+
+        alertDialog.show();
+
+    }
+
+    private void alertDialogDismiss(){
+        if (alertDialog.isShowing()){
+            alertDialog.dismiss();
+        }
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mDrawer=findViewById(R.id.drawerlayout);
         setupToolbar();
+
+        builder = new AlertDialog.Builder(TitleActivity.this);
+
+
+        tvContract = findViewById(R.id.tv_contact);
+
+        tvContract.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showContactDialogueBox();
+            }
+        });
     }
     public void click(View v){
 

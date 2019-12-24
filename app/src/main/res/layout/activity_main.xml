@@ -509,6 +509,7 @@
                     android:textSize="20sp"
                     android:layout_gravity="start"
                     android:text="Contact"
+
                     android:id="@+id/tv_contact"
                     android:background="?attr/selectableItemBackground"
                     android:clickable="true"
