@@ -36,24 +36,22 @@
             android:id="@+id/mylayout"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_margin="@dimen/constantlayoutmargin_8dp"
+            android:layout_margin="8dp"
             android:layout_height="wrap_content">
 
             <EditText
                 android:id="@+id/spinner"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:inputType="number"
-                android:layout_margin="@dimen/edittextmargin_8dp"
                 android:background="@drawable/border"
                 android:hint="@string/convert_edit_text_hint_usd"
-                android:textSize="@dimen/edittexttextsize_16sp"
-                android:paddingStart="@dimen/edittextpaddingstart_10dp"
+                android:textSize="16sp"
+                android:paddingStart="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:paddingLeft="@dimen/edittextpaddingstart_10dp" />
+                android:paddingLeft="10dp" />
 
             <TextView
                 android:id="@+id/textView"
@@ -117,7 +115,6 @@
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="-66dp"
                 android:background="@color/convert_backgroung_color"
                 android:text="@string/convert_text_view_to"
                 android:textAlignment="center"

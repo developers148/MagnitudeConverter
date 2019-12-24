@@ -31,7 +31,7 @@
     <dimen name="imageviewmarginbottom_56dp">110dp</dimen>
 
     <dimen name="relativelayoutheight_100dp">200dp</dimen>
-    <dimen name="textviewtextsize_30sp">20sp</dimen>
+    <dimen name="textviewtextsize_30sp">15sp</dimen>
     <dimen name="imageviewwidth_60dp">60dp</dimen>
     <dimen name="imageviewheigth_60dp">60dp</dimen>
     <dimen name="margin_8dp">8dp</dimen>
@@ -45,5 +45,9 @@
     <dimen name="buttonPadding_8dp">8dp</dimen>
     <dimen name="buttontextsize_28sp">28sp</dimen>
     <dimen name="linearlayouttextsize_25sp">25sp</dimen>
+    <dimen name="biglayoutmarginstart_8dp">8dp</dimen>
+    <dimen name="biglayoutmarginend_8dp">8dp</dimen>
+    <dimen name="biglayoutmargintop_16dp">16dp</dimen>
+    <dimen name="biglayoutmarginbottom_8dp">8dp</dimen>
 
 </resources>

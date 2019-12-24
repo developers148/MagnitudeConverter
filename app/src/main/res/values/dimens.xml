@@ -49,6 +49,10 @@
     <dimen name="buttontextsize_28sp">28sp</dimen>
     <dimen name="edMenuSize_260dp">260dp</dimen>
     <dimen name="linearlayouttextsize_25sp">25sp</dimen>
+    <dimen name="biglayoutmarginstart_8dp">8dp</dimen>
+    <dimen name="biglayoutmarginend_8dp">8dp</dimen>
+    <dimen name="biglayoutmargintop_16dp">16dp</dimen>
+    <dimen name="biglayoutmarginbottom_8dp">8dp</dimen>
 
 
 </resources>
