@@ -17,10 +17,12 @@ public class TitleActivity extends AppCompatActivity {
     private FlowingDrawer mDrawer;
 
 
-    TextView tvContract;
+    TextView tvHome, tvShare, tvContract, tvAbout;
 
     AlertDialog.Builder builder;
     AlertDialog alertDialog;
+
+    View dialogView;
 
 
 
@@ -39,6 +41,7 @@ public class TitleActivity extends AppCompatActivity {
 
         alertDialog.show();
 
+
     }
 
     private void alertDialogDismiss(){
@@ -56,7 +59,18 @@ public class TitleActivity extends AppCompatActivity {
         builder = new AlertDialog.Builder(TitleActivity.this);
 
 
+        tvHome = findViewById(R.id.tv_home);
         tvContract = findViewById(R.id.tv_contact);
+        tvShare = findViewById(R.id.tv_share);
+        tvAbout = findViewById(R.id.tv_about);
+
+        tvHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showHomeDialogueBox();
+            }
+        });
+
 
         tvContract.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,7 +78,25 @@ public class TitleActivity extends AppCompatActivity {
                 showContactDialogueBox();
             }
         });
+
+        tvShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showShareDialougeBox();
+            }
+        });
+
+        tvAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showAboutDialogueBox();
+            }
+        });
     }
+
+
+
+
     public void click(View v){
 
         if(v.getId()==R.id.currencyimage||v.getId()==R.id.currencytext){
@@ -110,6 +142,7 @@ public class TitleActivity extends AppCompatActivity {
             startActivity(i);
         }
     }
+
     protected void setupToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -121,5 +154,35 @@ public class TitleActivity extends AppCompatActivity {
                 mDrawer.toggleMenu();
             }
         });
+    }
+
+    void showHomeDialogueBox(){
+        mDrawer.closeMenu(true);
+    }
+
+    void showShareDialougeBox(){
+        mDrawer.closeMenu(true);
+        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+        sharingIntent.setType("text/plain");
+        String shareBody = "https://play.google.com/store/apps/magnitudeconverter";
+        String shareSub = "ToDo";
+        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, shareSub);
+        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+        startActivity(Intent.createChooser(sharingIntent, "Share using"));
+    }
+
+    void showAboutDialogueBox(){
+        mDrawer.closeMenu(true);
+
+        dialogView = getLayoutInflater().inflate(R.layout.aboutus, null);
+        builder.setView(null);
+        builder.setView(dialogView);
+
+        alertDialog=builder.create();
+        alertDialog.setCanceledOnTouchOutside(true);
+
+        alertDialogDismiss();
+        alertDialog.show();
+
     }
 }
