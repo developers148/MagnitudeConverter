@@ -40,7 +40,7 @@
                     android:layout_gravity="center"
                     android:text="@string/golam_name"
                     android:textColor="#000"
-                    android:textSize="@dimen/textsize_30sp"
+                    android:textSize="@dimen/aboutUsNameTextSize"
                     android:textStyle="bold"/>
 
 
@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/golam_mail"
                     android:textColor="#000"
-                    android:textSize="@dimen/textsize_20sp"/>
+                    android:textSize="@dimen/aboutUsGmailTextSize"/>
 
 
                 <TextView
@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/golam_fb"
                     android:textColor="#000"
-                    android:textSize="@dimen/textsize_20sp"/>
+                    android:textSize="@dimen/aboutUsFbTextSize"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -94,7 +94,7 @@
                     android:layout_gravity="center"
                     android:text="@string/mychacl_name"
                     android:textColor="#000"
-                    android:textSize="@dimen/textsize_30sp"
+                    android:textSize="@dimen/aboutUsNameTextSize"
                     android:textStyle="bold"/>
 
                 <LinearLayout
@@ -108,7 +108,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/mychacl_mail"
                         android:textColor="#000"
-                        android:textSize="@dimen/textsize_20sp"/>
+                        android:textSize="@dimen/aboutUsGmailTextSize"/>
 
                     <TextView
                         android:layout_gravity="center"
@@ -116,7 +116,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/mychacl_fb"
                         android:textColor="#000"
-                        android:textSize="@dimen/textsize_20sp"/>
+                        android:textSize="@dimen/aboutUsFbTextSize"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -154,7 +154,7 @@
                     android:layout_gravity="center"
                     android:text="@string/irfan_name"
                     android:textColor="#000"
-                    android:textSize="@dimen/textsize_30sp"
+                    android:textSize="@dimen/aboutUsNameTextSize"
                     android:textStyle="bold"/>
 
 
@@ -165,7 +165,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/irfan_mail"
                     android:textColor="#000"
-                    android:textSize="@dimen/textsize_20sp"/>
+                    android:textSize="@dimen/aboutUsGmailTextSize"/>
 
 
                 <TextView
@@ -174,7 +174,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/irfan_fb"
                     android:textColor="#000"
-                    android:textSize="@dimen/textsize_20sp"/>
+                    android:textSize="@dimen/aboutUsFbTextSize"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -208,7 +208,7 @@
                     android:layout_gravity="center"
                     android:text="@string/tarek_name"
                     android:textColor="#000"
-                    android:textSize="@dimen/textsize_30sp"
+                    android:textSize="@dimen/aboutUsNameTextSize"
                     android:textStyle="bold"/>
 
                 <LinearLayout
@@ -222,14 +222,14 @@
                         android:layout_height="wrap_content"
                         android:text="@string/tarek_mail"
                         android:textColor="#000"
-                        android:textSize="@dimen/textsize_20sp"/>
+                        android:textSize="@dimen/aboutUsGmailTextSize"/>
                     <TextView
                         android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tarek_fb"
                         android:textColor="#000"
-                        android:textSize="@dimen/textsize_20sp"/>
+                        android:textSize="@dimen/aboutUsFbTextSize"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -265,7 +265,7 @@
                     android:layout_gravity="center"
                     android:text="@string/ishtiaq_name"
                     android:textColor="#000"
-                    android:textSize="@dimen/textsize_30sp"
+                    android:textSize="@dimen/aboutUsNameTextSize"
                     android:textStyle="bold"/>
 
                 <LinearLayout
@@ -279,7 +279,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/ishtiaq_mail"
                         android:textColor="#000"
-                        android:textSize="@dimen/textsize_20sp"/>
+                        android:textSize="@dimen/aboutUsGmailTextSize"/>
 
 
                     <TextView
@@ -288,7 +288,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/ishtiaq_fb"
                         android:textColor="#000"
-                        android:textSize="@dimen/textsize_20sp"/>
+                        android:textSize="@dimen/aboutUsFbTextSize"/>
 
                 </LinearLayout>
             </LinearLayout>

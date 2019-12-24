@@ -159,6 +159,7 @@ public class ConvertActivity extends AppCompatActivity {
 
                 e1.setHint(item.get(0));
                 e2.setHint(item.get(1));
+                e3.setHint(item.get(1));
                 from = item.get(0);
                 to = item.get(1);
 
@@ -168,6 +169,7 @@ public class ConvertActivity extends AppCompatActivity {
                 subitem.addAll(Arrays.asList(lengthlist));
                 e1.setHint(item.get(0));
                 e2.setHint(item.get(1));
+                e3.setHint(item.get(1));
                 from = item.get(0);
                 to = item.get(1);
                 break;
@@ -176,6 +178,7 @@ public class ConvertActivity extends AppCompatActivity {
                 subitem.addAll(Arrays.asList(numberlist));
                 e1.setHint(item.get(0));
                 e2.setHint(item.get(1));
+                e3.setHint(item.get(1));
                 from = item.get(0);
                 to = item.get(1);
                 break;
@@ -185,6 +188,7 @@ public class ConvertActivity extends AppCompatActivity {
                 e1.setInputType(InputType.TYPE_CLASS_TEXT);
                 e1.setHint(item.get(0));
                 e2.setHint(item.get(1));
+                e3.setHint(item.get(1));
                 from = item.get(0);
                 to = item.get(1);
                 break;
@@ -193,6 +197,7 @@ public class ConvertActivity extends AppCompatActivity {
                 subitem.addAll(Arrays.asList(pressurelist));
                 e1.setHint(item.get(0));
                 e2.setHint(item.get(1));
+                e3.setHint(item.get(1));
                 from = item.get(0);
                 to = item.get(1);
                 break;
@@ -201,6 +206,7 @@ public class ConvertActivity extends AppCompatActivity {
                 subitem.addAll(Arrays.asList(timelist));
                 e1.setHint(item.get(0));
                 e2.setHint(item.get(1));
+                e3.setHint(item.get(1));
                 from = item.get(0);
                 to = item.get(1);
                 break;
@@ -209,6 +215,7 @@ public class ConvertActivity extends AppCompatActivity {
                 subitem.addAll(Arrays.asList(weightlist));
                 e1.setHint(item.get(0));
                 e2.setHint(item.get(1));
+                e3.setHint(item.get(1));
                 from = item.get(0);
                 to = item.get(1);
                 break;
@@ -217,6 +224,7 @@ public class ConvertActivity extends AppCompatActivity {
                 subitem.addAll(Arrays.asList(temparaturelist));
                 e1.setHint(item.get(0));
                 e2.setHint(item.get(1));
+                e3.setHint(item.get(1));
                 from = item.get(0);
                 to = item.get(1);
                 break;

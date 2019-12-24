@@ -53,4 +53,12 @@
     <dimen name="biglayoutmarginend_8dp">8dp</dimen>
     <dimen name="biglayoutmargintop_16dp">16dp</dimen>
     <dimen name="biglayoutmarginbottom_8dp">8dp</dimen>
+
+
+
+
+
+    <dimen name="aboutUsNameTextSize">20sp</dimen>
+    <dimen name="aboutUsGmailTextSize">17sp</dimen>
+    <dimen name="aboutUsFbTextSize">17sp</dimen>
 </resources>
