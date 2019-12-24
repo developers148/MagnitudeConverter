@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <dimen name="titletext25_sp">25dp</dimen>
     <dimen name="titletextmarginleft_16dp">16dp</dimen>
     <dimen name="titletextsize_20sp">50sp</dimen>
@@ -15,37 +14,19 @@
     <dimen name="imageviewconvert_45dp">45dp</dimen>
     <dimen name="buttondrawablepadding_8dp">8dp</dimen>
     <dimen name="buttonmargintop_8dp">8dp</dimen>
-
-
-
     <dimen name="titlemargintop_10dp">10dp</dimen>
-
     <dimen name="titlemarginbottom_4dp">4dp</dimen>
-
     <dimen name="titlemarginstart_8dp">1dp</dimen>
-
-
-
-
     <dimen name="linearlayoutmargin_8dp">8dp</dimen>
-
     <dimen name="textviewmargintop_20dp">15dp</dimen>
-
     <dimen name="textviewmarginbottom_2dp">2dp</dimen>
-
     <dimen name="imageviewmargintop_20dp">-51dp</dimen>
-
     <dimen name="imageviewmarginbottom_56dp">104dp</dimen>
-
     <dimen name="relativelayoutheight_100dp">235dp</dimen>
-
     <dimen name="imageviewwidth_60dp">75dp</dimen>
-
     <dimen name="imageviewheigth_60dp">75dp</dimen>
-
     <dimen name="textviewtextsize_30sp">40sp</dimen>
     <dimen name="margin_8dp">8dp</dimen>
-
     <dimen name="padding_8dp">8dp</dimen>
     <dimen name="textsize_30sp">30sp</dimen>
     <dimen name="textsize_20sp">20sp</dimen>
@@ -60,7 +41,10 @@
     <dimen name="biglayoutmarginend_8dp">8dp</dimen>
     <dimen name="biglayoutmargintop_16dp">16dp</dimen>
     <dimen name="biglayoutmarginbottom_8dp">8dp</dimen>
-
+    <dimen name="hometextsize_20sp">20sp</dimen>
+    <dimen name="homelayoutmargin_8dp">8dp</dimen>
+    <dimen name="homedrawablepadding_8dp">8dp</dimen>
+    <dimen name="sharetextsize_20sp">20sp</dimen>
     <dimen name="aboutUsNameTextSize">30sp</dimen>
     <dimen name="aboutUsGmailTextSize">25sp</dimen>
     <dimen name="aboutUsFbTextSize">25sp</dimen>
