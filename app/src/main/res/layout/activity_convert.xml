@@ -152,17 +152,16 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/convert"
-        android:textColor="#fff"
-        android:drawableLeft="@drawable/buttonlogo"
-        android:padding="@dimen/buttonPadding_8dp"
-        android:textSize="@dimen/buttontextsize_28sp"
-        android:drawablePadding="@dimen/buttondrawablepadding_8dp"
+        android:layout_gravity="center"
         android:layout_marginTop="@dimen/buttonmargintop_8dp"
         android:background="@drawable/buttonbg"
-        android:layout_gravity="center"
-        android:drawableStart="@drawable/buttonlogo" />
-
+        android:drawableStart="@drawable/buttonlogo"
+        android:drawableLeft="@drawable/buttonlogo"
+        android:drawablePadding="@dimen/buttondrawablepadding_8dp"
+        android:padding="@dimen/buttonPadding_8dp"
+        android:text="@string/convert"
+        android:textColor="#fff"
+        android:textSize="@dimen/buttontextsize_28sp" />
 
     <View
         android:layout_width="0dp"

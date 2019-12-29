@@ -26,6 +26,7 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/convertiontype"
         android:text="@string/currency"
         android:textSize="@dimen/titletextsize_20sp"
         android:layout_marginStart="@dimen/titlemarginstart_16dp"

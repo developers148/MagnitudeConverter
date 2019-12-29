@@ -145,19 +145,25 @@
     </LinearLayout>
 
 
+
+
+
+
     <Button
         android:id="@+id/convert"
+
         android:layout_width="wrap_content"
         android:layout_height="?attr/actionBarSize"
-        android:text="@string/convert"
+        android:text="convert"
         android:textColor="#fff"
+        android:drawableStart="@drawable/buttonlogo"
+        android:padding="@dimen/buttonPadding_8dp"
+        android:drawablePadding="@dimen/buttondrawablepadding_8dp"
+        android:layout_marginTop="@dimen/buttonmargintop_8dp"
         android:textSize="@dimen/buttontextsize_28sp"
-        android:drawableLeft="@drawable/buttonlogo"
-        android:padding="12dp"
-        android:drawablePadding="12dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/buttonbg"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/buttonlogo" />
 
 
     <View

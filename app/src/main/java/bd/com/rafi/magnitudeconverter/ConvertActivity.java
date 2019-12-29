@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,7 +21,7 @@ import java.util.Arrays;
 public class ConvertActivity extends AppCompatActivity {
     EditText e1,e2,e3;
 
-   // TextView convertiontype,t2;
+    TextView convertiontype,t2;
     ImageButton imagebtn,imagebtn2;
     Button convert;
     ArrayList<String> item,subitem;
@@ -40,6 +41,11 @@ public class ConvertActivity extends AppCompatActivity {
         e3=findViewById(R.id.spinner2);
         e2.setEnabled(false);
        // e3.setEnabled(false);
+
+
+        convertiontype = findViewById(R.id.convertiontype);
+
+        convertiontype.setText(getIntent().getStringExtra("value")+" Conversion");
 
         e1.setInputType(InputType.TYPE_CLASS_NUMBER);
 
