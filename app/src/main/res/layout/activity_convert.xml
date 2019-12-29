@@ -153,6 +153,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/convert"
+        android:textColor="#fff"
         android:drawableLeft="@drawable/buttonlogo"
         android:padding="@dimen/buttonPadding_8dp"
         android:textSize="@dimen/buttontextsize_28sp"

@@ -154,6 +154,7 @@
         android:padding="@dimen/buttonPadding_8dp"
         android:drawablePadding="@dimen/buttondrawablepadding_8dp"
         android:text="@string/convert"
+        android:textColor="#fff"
         android:textSize="@dimen/buttontextsize_28sp"
         />
 

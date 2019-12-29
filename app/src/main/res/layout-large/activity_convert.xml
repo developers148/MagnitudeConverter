@@ -152,6 +152,7 @@
         android:layout_width="wrap_content"
         android:layout_height="?attr/actionBarSize"
         android:text="convert"
+        android:textColor="#fff"
         android:drawableLeft="@drawable/buttonlogo"
         android:padding="@dimen/buttonPadding_8dp"
         android:drawablePadding="@dimen/buttondrawablepadding_8dp"
