@@ -2,7 +2,7 @@
 <resources>
     <dimen name="titletext25_sp">25dp</dimen>
     <dimen name="titletextmarginleft_16dp">16dp</dimen>
-    <dimen name="titletextsize_20sp">50sp</dimen>
+    <dimen name="titletextsize_20sp">20sp</dimen>
     <dimen name="titlemarginstart_16dp">16dp</dimen>
     <dimen name="constantlayoutmargin_8dp">8dp</dimen>
     <dimen name="constantlayotuedtheight">?attr/actionBarSize</dimen>
@@ -18,7 +18,7 @@
     <dimen name="titlemarginbottom_4dp">4dp</dimen>
     <dimen name="titlemarginstart_8dp">1dp</dimen>
     <dimen name="linearlayoutmargin_8dp">8dp</dimen>
-    <dimen name="textviewmargintop_20dp">15dp</dimen>
+    <dimen name="textviewmargintop_20dp">70dp</dimen>
     <dimen name="textviewmarginbottom_2dp">2dp</dimen>
     <dimen name="imageviewmargintop_20dp">-51dp</dimen>
     <dimen name="imageviewmarginbottom_56dp">104dp</dimen>
@@ -45,7 +45,12 @@
     <dimen name="homelayoutmargin_8dp">8dp</dimen>
     <dimen name="homedrawablepadding_8dp">8dp</dimen>
     <dimen name="sharetextsize_20sp">20sp</dimen>
+    <dimen name="sharelayoutmargin_8dp">8dp</dimen>
+    <dimen name="edMenuSize_260dp">260dp</dimen>
     <dimen name="aboutUsNameTextSize">30sp</dimen>
     <dimen name="aboutUsGmailTextSize">25sp</dimen>
     <dimen name="aboutUsFbTextSize">25sp</dimen>
+    <dimen name="card_corner_redious_5dp">5sp</dimen>
+    <dimen name="navigationbarheight_180dp">180dp</dimen>
+    <dimen name="imageview_100dp">100dp</dimen>
 </resources>
