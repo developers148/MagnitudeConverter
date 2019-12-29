@@ -26,7 +26,7 @@
     <string name="from">From</string>
     <string name="convert">convert</string>
     <string name="bdt">BDT</string>
-    <string name="todo">TODO</string>
+
 
 
     <string-array name="spinner_arrays">
@@ -75,4 +75,9 @@
     <string name="convert_edittext_hint_bdt">BDT</string>
     <string name="convert_text_view_to">To</string>
     <string name="convert_textview_from">From</string>
+
+    <string name="todo">TODO</string>
+    <string name="reza_name">Md Mahmudul Hasan Reza</string>
+    <string name="reza_mail">mdreza112415@gmail.com</string>
+    <string name="reza_fb">fb/Md.M.H.Reza</string>
 </resources>

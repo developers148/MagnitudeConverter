@@ -4,4 +4,6 @@
     <string name="convert_edittext_hint_bdt">BDT</string>
     <string name="convert_text_view_to">To</string>
     <string name="convert_textview_from">From</string>
+    <string name="todo">TODO</string>
+
 </resources>
