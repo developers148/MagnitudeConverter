@@ -68,6 +68,7 @@
                 android:text="@string/project_title"
                 android:textColor="@color/convert_text_color"
                 android:textSize="@dimen/textsize_20sp"
+
                 android:layout_marginEnd="@dimen/margin_4dp"
                 android:layout_marginStart="@dimen/textViewMarginStart_4dp"
                 android:textStyle="bold"
