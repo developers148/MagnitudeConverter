@@ -41,7 +41,7 @@ public class ConvertActivity extends AppCompatActivity {
         e2.setEnabled(false);
        // e3.setEnabled(false);
 
-
+        e1.setInputType(InputType.TYPE_CLASS_NUMBER);
 
 
 
@@ -149,7 +149,7 @@ public class ConvertActivity extends AppCompatActivity {
         final String [] weightlist = {"Kilogram","Gram","Pound","Ton","Ounce"};
         final String [] timelist = {"Minute","Second","Hour","Day","Week","Month","Year"};
         final String [] numberlist= {"Decimal","Octal","Binary","Hexadecimal"};
-        final String [] wordtonumber = {"Word","Number"};
+        final String [] wordtonumber = {"Number","Word"};
 
 
         switch (value) {

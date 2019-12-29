@@ -30,6 +30,13 @@ class NumberConversion {
                         finalconverted = Integer.toHexString(decimal);
                         break;
                     }
+
+                    case "Decimal": {
+                        int decimal;
+                        decimal = Integer.parseInt(value);
+                        finalconverted = Integer.toString(decimal);
+                        break;
+                    }
                 }
                 break;
             case "Binary":

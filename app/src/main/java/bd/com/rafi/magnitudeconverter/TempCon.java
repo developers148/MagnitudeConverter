@@ -18,6 +18,9 @@ class TempCon {
                     case "Kelvin":
                         finalresult = String.valueOf(i + 273.15);
                         break;
+                    case "Celsius":
+                        finalresult = String.valueOf(i *1);
+                        break;
                 }
                 break;
             case "Fahrenheit":
@@ -29,6 +32,10 @@ class TempCon {
                     case "Kelvin" :
                         finalresult = String.valueOf((i - 32) *  (.55555) + 273.15);
                         break;
+
+                    case "Fahrenheit" :
+                        finalresult = String.valueOf(i *1);
+                        break;
                 }
                 break;
             case "Kelvin":
@@ -38,6 +45,10 @@ class TempCon {
                         break;
                     case "Fahrenheit":
                         finalresult = String.valueOf((i - 273.15) * (9 / 5) + 32);
+                        break;
+
+                    case "Kelvin":
+                        finalresult = String.valueOf(i*1);
                         break;
                 }
                 break;

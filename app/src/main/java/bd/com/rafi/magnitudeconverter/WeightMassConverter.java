@@ -38,6 +38,10 @@ class WeightMassConverter {
                     case "Ounce":
                         finalresult = String.valueOf(i * 35.27396195);
                         break;
+
+                    case "Kilogram":
+                        finalresult = String.valueOf(i * 1);
+                        break;
                 }
                 break;
             case "Pound":

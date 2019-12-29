@@ -38,6 +38,11 @@ class TimeConversion {
                         year = Double.parseDouble(value) * 1.9026e-6;
                         finalconverted = String.valueOf(year);
                         break;
+                    case "Minute":
+                        double same;
+                        same = Double.parseDouble(value) * 1;
+                        finalconverted = String.valueOf(same);
+                        break;
                 }
                 break;
 
