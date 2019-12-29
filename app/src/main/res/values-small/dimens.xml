@@ -42,9 +42,15 @@
     <dimen name="biglayoutmargintop_16dp">16dp</dimen>
     <dimen name="biglayoutmarginbottom_8dp">8dp</dimen>
     <dimen name="hometextsize_20sp">20sp</dimen>
+    <dimen name="sharelayoutmargin_8dp">8dp</dimen>
     <dimen name="homelayoutmargin_8dp">8dp</dimen>
     <dimen name="homedrawablepadding_8dp">8dp</dimen>
     <dimen name="aboutUsNameTextSize">18sp</dimen>
     <dimen name="aboutUsGmailTextSize">15sp</dimen>
     <dimen name="aboutUsFbTextSize">15sp</dimen>
+    <dimen name="sharetextsize_20sp">20sp</dimen>
+    <dimen name="edMenuSize_260dp">260dp</dimen>
+    <dimen name="card_corner_redious_5dp">5sp</dimen>
+    <dimen name="navigationbarheight_180dp">180dp</dimen>
+    <dimen name="imageview_100dp">100dp</dimen>
 </resources>

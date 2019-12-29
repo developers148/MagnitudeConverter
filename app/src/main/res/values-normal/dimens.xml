@@ -21,7 +21,9 @@
     <dimen name="textviewmargintop_20dp">20dp</dimen>
     <dimen name="textviewmarginbottom_2dp">2dp</dimen>
     <dimen name="imageviewmargintop_20dp">-20dp</dimen>
+    <dimen name="imageviewheigth_60dp">60dp</dimen>
     <dimen name="imageviewmarginbottom_56dp">56dp</dimen>
+    <dimen name="imageviewwidth_60dp">60dp</dimen>
     <dimen name="relativelayoutheight_100dp">100dp</dimen>
     <dimen name="textviewtextsize_30sp">30sp</dimen>
     <dimen name="margin_8dp">8dp</dimen>
@@ -43,7 +45,12 @@
     <dimen name="homelayoutmargin_8dp">8dp</dimen>
     <dimen name="homedrawablepadding_8dp">8dp</dimen>
     <dimen name="sharetextsize_20sp">20sp</dimen>
+    <dimen name="sharelayoutmargin_8dp">8dp</dimen>
+    <dimen name="edMenuSize_260dp">260dp</dimen>
     <dimen name="aboutUsNameTextSize">20sp</dimen>
     <dimen name="aboutUsGmailTextSize">17sp</dimen>
     <dimen name="aboutUsFbTextSize">17sp</dimen>
+    <dimen name="card_corner_redious_5dp">5sp</dimen>
+    <dimen name="navigationbarheight_180dp">180dp</dimen>
+    <dimen name="imageview_100dp">100dp</dimen>
 </resources>
